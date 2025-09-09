@@ -7,7 +7,8 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@import "./src/styles/variables.scss";`
+        // Use @use to avoid Sass @import deprecation and ensure a trailing newline
+        additionalData: `@use "./src/styles/variables.scss" as *;\n`
       }
     }
   }

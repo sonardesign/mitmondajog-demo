@@ -1,19 +1,4 @@
 .home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 50vh;
-
-  h1 {
-    color: $primary-color;
-    font-size: 4rem;
-    margin: 0;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: color 0.3s ease;
-
-    &:hover {
-      color: $secondary-color;
-    }
-  }
+  // Page uses the neutral base background from tokens (set globally)
+  color: $color-text-neutral-base;
 }

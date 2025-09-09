@@ -1,0 +1,370 @@
+@use '../../styles/variables.scss' as *;
+// Button component styles based on Figma node 564:11934
+
+.button {
+  // Base button styles
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-family-primary; // Inter
+  font-weight: $font-weight-bold; // 700
+  text-decoration: none;
+  transition: all 120ms ease;
+  border-radius: $radius-rounded; // 1000px (pill shape)
+  position: relative;
+  white-space: nowrap;
+  
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  // Focus styles
+  &:focus-visible {
+    outline: none;
+    box-shadow: 
+      0 0 0 2px #ffffff, // focus inner ring
+      0 0 0 4px rgba(83, 161, 153, 1); // #53a199 (focus outer ring)
+  }
+
+  // Loading state
+  &--loading {
+    pointer-events: none;
+  }
+}
+
+// =========================
+// SIZE VARIANTS
+// =========================
+.button--xSmall {
+  padding: $spacing-100 $spacing-200; // 4px 8px
+  font-size: $font-size-xs; // 12px
+  line-height: 1;
+  gap: $spacing-100; // 4px
+  
+  &.button--icon-only {
+    padding: $spacing-100; // 4px
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.button--small {
+  padding: $spacing-200; // 8px
+  font-size: $font-size-sm; // 14px
+  line-height: 1;
+  gap: $spacing-100; // 4px
+  
+  &.button--icon-only {
+    padding: $spacing-200; // 8px
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.button--medium {
+  padding: $spacing-300; // 12px
+  font-size: $font-size-base; // 16px
+  line-height: 1;
+  gap: $spacing-200; // 8px
+  
+  &.button--icon-only {
+    padding: $spacing-300; // 12px
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.button--large {
+  padding: $spacing-400; // 16px
+  font-size: $font-size-lg; // 18px
+  line-height: 1;
+  gap: $spacing-200; // 8px
+  
+  &.button--icon-only {
+    padding: $spacing-400; // 16px
+    width: 56px;
+    height: 56px;
+  }
+}
+
+// =========================
+// PRIMARY VARIANT
+// =========================
+.button--primary {
+  // Brand color (default)
+  &.button--brand {
+    background: $color-bg-brand-base-inverted; // #25887e
+    color: $color-text-neutral-inverted; // #ffffff
+    
+    .button__icon {
+      color: $color-button-primary-icon-enabled; // #ffffff
+    }
+    
+    &:hover:not(:disabled) {
+      background: #238177; // hover state
+    }
+    
+    &.button--pressed,
+    &:active:not(:disabled) {
+      background: $color-bg-brand-strong-inverted; // #1f736a
+    }
+    
+    &:disabled,
+    &.button--disabled {
+      background: #a3abba; // disabled background
+      color: #f5f7fa; // disabled text
+      
+      .button__icon {
+        color: #7e8797; // disabled icon
+      }
+    }
+  }
+  
+  // Negative/destructive color
+  &.button--negative {
+    background: #d40d00; // destructive red
+    color: $color-text-neutral-inverted; // #ffffff
+    
+    .button__icon {
+      color: $color-text-neutral-inverted; // #ffffff
+    }
+    
+    &:hover:not(:disabled) {
+      background: #8e0000; // destructive hover
+    }
+    
+    &.button--pressed,
+    &:active:not(:disabled) {
+      background: #790000; // destructive pressed
+    }
+  }
+  
+  // Inverted color
+  &.button--inverted {
+    background: $color-button-primary-bg-inverted-enabled; // #f4f9f8
+    color: $color-bg-brand-base-inverted; // #25887e
+    
+    .button__icon {
+      color: $color-bg-brand-base-inverted; // #25887e
+    }
+    
+    &:hover:not(:disabled) {
+      background: #c6e0dd; // inverted hover
+    }
+    
+    &.button--pressed,
+    &:active:not(:disabled) {
+      background: #afd3cf; // inverted pressed
+    }
+  }
+}
+
+// =========================
+// SECONDARY VARIANT
+// =========================
+.button--secondary {
+  background: transparent;
+  border: 2px solid;
+  
+  &.button--brand {
+    border-color: $color-bg-brand-base-inverted; // #25887e
+    color: $color-bg-brand-base-inverted;
+    
+    .button__icon {
+      color: $color-bg-brand-base-inverted;
+    }
+    
+    &:hover:not(:disabled) {
+      background: rgba(37, 136, 126, 0.1);
+    }
+    
+    &.button--pressed,
+    &:active:not(:disabled) {
+      background: rgba(37, 136, 126, 0.2);
+    }
+  }
+  
+  &.button--negative {
+    border-color: #d40d00; // destructive red
+    color: #d40d00;
+    
+    .button__icon {
+      color: #d40d00;
+    }
+    
+    &:hover:not(:disabled) {
+      background: rgba(212, 13, 0, 0.1);
+    }
+  }
+}
+
+// =========================
+// OUTLINE VARIANT
+// =========================
+.button--outline {
+  background: transparent;
+  border: 1px solid;
+  
+  &.button--brand {
+    border-color: $color-bg-brand-base-inverted;
+    color: $color-bg-brand-base-inverted;
+    
+    &:hover:not(:disabled) {
+      background: rgba(37, 136, 126, 0.05);
+    }
+  }
+  
+  &.button--neutral {
+    border-color: #606b7a;
+    color: #606b7a;
+    
+    &:hover:not(:disabled) {
+      background: rgba(96, 107, 122, 0.05);
+    }
+  }
+}
+
+// =========================
+// SUBTLE VARIANT
+// =========================
+.button--subtle {
+  background: transparent;
+  
+  &.button--brand {
+    color: $color-bg-brand-base-inverted; // #25887e
+    
+    .button__icon {
+      color: $color-bg-brand-base-inverted;
+    }
+    
+    &:hover:not(:disabled) {
+      background: rgba(37, 136, 126, 0.05);
+    }
+    
+    &.button--pressed,
+    &:active:not(:disabled) {
+      background: rgba(37, 136, 126, 0.1);
+    }
+  }
+  
+  &.button--inverted {
+    background: rgba(255, 255, 255, 0.05);
+    color: $color-text-neutral-inverted; // #ffffff
+    
+    .button__icon {
+      color: $color-text-neutral-inverted;
+    }
+    
+    &:hover:not(:disabled) {
+      background: rgba(255, 255, 255, 0.1);
+    }
+    
+    &.button--pressed,
+    &:active:not(:disabled) {
+      background: rgba(255, 255, 255, 0.15);
+    }
+  }
+}
+
+// =========================
+// ICON STYLES
+// =========================
+.button__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  img, svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  // Icon sizes based on button size
+  .button--xSmall & {
+    width: 12px;
+    height: 12px;
+  }
+  
+  .button--small & {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .button--medium & {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .button--large & {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.button__label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// =========================
+// LOADING SPINNER
+// =========================
+.spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  &--small {
+    width: 16px;
+    height: 16px;
+  }
+  
+  &--medium {
+    width: 20px;
+    height: 20px;
+  }
+  
+  &--large {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.spinner__icon {
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  border-top: 2px solid currentColor;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+// =========================
+// HIGH CONTRAST MODE
+// =========================
+@media (prefers-contrast: high) {
+  .button {
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border: 2px solid transparent;
+      border-radius: inherit;
+      pointer-events: none;
+    }
+    
+    &:focus-visible::after {
+      border-color: currentColor;
+    }
+  }
+}

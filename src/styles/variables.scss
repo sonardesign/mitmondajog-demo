@@ -21,3 +21,128 @@ $spacing-xl: 3rem;
 // Border radius
 $border-radius: 8px;
 $border-radius-lg: 12px;
+
+// -----------------------------
+// Figma Tokens (appended)
+// Source: NJT — DÁP brand merge
+// -----------------------------
+
+// Colors — text
+$color-text-neutral-strong: #1c1f26; // text/neutral/strong
+$color-text-neutral-base: #404753; // text/neutral/base
+$color-text-neutral-subtle: #606b7a; // text/neutral/subtle
+$color-text-neutral-placeholder: #a3abba; // text/neutral/placeholder
+$color-text-neutral-inverted: #ffffff; // text/neutral/inverted
+
+// Colors — background
+$color-bg-neutral-base: #f5f7fa; // background/neutral/base
+$color-bg-neutral-strong: #e9edf2; // background/neutral/strong
+$color-bg-neutral-subtle: #ffffff; // background/neutral/subtle
+$color-bg-brand-base-inverted: #25887e; // background/brand/base-inverted
+$color-bg-brand-strong-inverted: #1f736a; // background/brand/strong-inverted
+$color-bg-brand-medium: #ddeceb; // background/brand/medium
+
+// Colors — buttons/icons/misc
+$color-button-secondary-text-inverted: #1c1f26; // button-secondary/text/inverted
+$color-button-subtle-text-neutral-enabled: #282c35; // button-subtle/text/neutral-enabled
+$color-button-outline-icon-enabled: #25887e; // button-outline/icon/enabled
+$color-button-primary-icon-enabled: #ffffff; // button-primary/icon/enabled
+$color-button-primary-bg-inverted-enabled: #f4f9f8; // button-primary/background/inverted-enabled
+$color-button-outline-icon-inverted-enabled: #f4f9f8; // button-outline/icon/inverted-enabled
+$color-button-outline-border-inverted-enabled: #f4f9f8; // button-outline/border/inverted-enabled
+$color-border-neutral-transparent-interactive: #ffffff00; // border/neutral/transparent-interactive
+$color-border-neutral-base: #606b7a; // border/neutral/base
+$color-icon-neutral-disabled: #707a8a; // icon/neutral/disabled
+$color-icon-neutral-inverted: #ffffff; // icon/neutral/inverted
+$color-focus-inner-ring: #ffffff; // focus/inner-ring
+$color-focus-outer-ring: #25887e; // focus/outer-ring
+
+// Neutral scale (as provided)
+$neutral-200: #eef2f6; // neutral/200
+
+// Typography — families
+$font-family-primary: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; // family/primary
+$font-family-secondary: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; // family/secondary
+
+// Typography — weights
+$font-weight-medium: 500; // weight/medium
+$font-weight-bold: 700; // weight/bold
+
+// Typography — font sizes
+$font-size-xs: 12px; // size/xs
+$font-size-sm: 14px; // size/sm
+$font-size-base: 16px; // size/base
+$font-size-lg: 18px; // size/lg
+$font-size-xl: 20px; // size/xl
+
+// Typography — presets (from Figma comments)
+// Heading 1
+$heading-1-family: $font-family-primary; // Heading/Heading 1
+$heading-1-size: 32px;
+$heading-1-weight: $font-weight-bold;
+$heading-1-line-height: 1.25;
+
+// Heading 2
+$heading-2-family: $font-family-primary; // Heading/Heading 2
+$heading-2-size: 28px;
+$heading-2-weight: $font-weight-bold;
+$heading-2-line-height: 1.25;
+
+// Heading 3
+$heading-3-family: $font-family-primary; // Heading/Heading 3
+$heading-3-size: 22px;
+$heading-3-weight: $font-weight-bold;
+$heading-3-line-height: 1.25;
+
+// Heading 5
+$heading-5-family: $font-family-primary; // Heading/Heading 5
+$heading-5-size: 18px;
+$heading-5-weight: $font-weight-bold;
+$heading-5-line-height: 1.25;
+
+// Body Large Regular
+$body-lg-family: $font-family-primary; // Body/Large/Regular
+$body-lg-size: 18px;
+$body-lg-weight: $font-weight-medium;
+$body-lg-line-height: 1.5;
+
+// Body Medium Regular
+$body-md-family: $font-family-primary; // Body/Medium/Regular
+$body-md-size: 16px;
+$body-md-weight: $font-weight-medium;
+$body-md-line-height: 1.5;
+
+// Body Small Regular
+$body-sm-family: $font-family-primary; // Body/Small/Regular
+$body-sm-size: 14px;
+$body-sm-weight: $font-weight-medium;
+$body-sm-line-height: 1.5;
+
+// UI presets noted
+$ui-100-sm-bold-line-height: 1; // Global/UI (100)/sm/bold
+$ui-100-lg-regular-line-height: 1; // Global/UI (100)/lg/regular
+$ui-150-base-regular-line-height: 1.5; // Global/UI (150)/base/regular
+
+// Spacing scale
+$spacing-0: 0; // spacing/0
+$spacing-100: 4px; // spacing/100
+$spacing-200: 8px; // spacing/200
+$spacing-300: 12px; // spacing/300
+$spacing-400: 16px; // spacing/400
+$spacing-500: 20px; // spacing/500
+$spacing-600: 24px; // spacing/600
+$spacing-800: 32px; // spacing/800
+$spacing-1000: 40px; // spacing/1000
+$spacing-1200: 48px; // spacing/1200
+$spacing-1600: 64px; // spacing/1600
+$size-1400: 80px; // global/size/size-1400 (80px)
+
+// Radius
+$radius-none: 0; // radius/none
+$radius-small: 4px; // radius/small
+$radius-base: 8px; // radius/base
+$radius-rounded: 1000px; // radius/rounded
+
+// Borders
+$border-width-base: 1px; // border-width/base
+

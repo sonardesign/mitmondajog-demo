@@ -1,0 +1,134 @@
+@use '../../styles/variables.scss' as *;
+
+.banner {
+  border-radius: $radius-base; // 8px
+  padding: $spacing-1200; // 48px
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 537px; // From Figma
+  height: 278px; // From Figma
+  box-sizing: border-box;
+  
+  &--primary {
+    background: $color-bg-brand-base-inverted; // #25887e
+    color: $color-text-neutral-inverted; // #ffffff
+  }
+  
+  &--secondary {
+    background: $color-bg-brand-medium; // #ddeceb
+    color: $color-text-neutral-strong; // #1c1f26
+  }
+}
+
+.banner__content {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-800; // 32px
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+}
+
+.banner__text {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-400; // 16px
+  align-items: flex-start;
+  justify-content: flex-start;
+  line-height: 0; // From Figma spec
+  text-align: left;
+  width: 100%;
+}
+
+.banner__title {
+  font-family: $heading-2-family; // Inter
+  font-size: $heading-2-size; // 28px
+  font-weight: $heading-2-weight; // 700 (bold)
+  line-height: $heading-2-line-height; // 1.25
+  letter-spacing: -0.56px; // From Figma
+  margin: 0;
+  width: 436px; // From Figma
+  
+  // Handle line breaks as specified in Figma
+  white-space: pre-line;
+  
+  .banner--secondary & {
+    color: $color-text-neutral-strong; // #1c1f26
+  }
+}
+
+.banner__subtitle {
+  font-family: $body-md-family; // Inter
+  font-size: $body-md-size; // 16px
+  font-weight: $body-md-weight; // 500 (medium)
+  line-height: $body-md-line-height; // 1.5
+  margin: 0;
+  width: 436px; // From Figma
+  
+  .banner--secondary & {
+    color: $color-text-neutral-base; // #404753
+  }
+}
+
+.banner__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-300; // 12px
+  border-radius: $radius-rounded; // 1000px
+  background: transparent;
+  border: 1.5px solid;
+  cursor: pointer;
+  transition: background-color 120ms ease, opacity 120ms ease, border-color 120ms ease;
+  height: 40px; // From Figma
+  min-width: 80px; // From Figma
+  box-sizing: border-box;
+  
+  font-family: $body-md-family; // Inter
+  font-size: $body-md-size; // 16px
+  font-weight: $font-weight-bold; // 700
+  line-height: 0;
+  text-align: center;
+  white-space: nowrap;
+  
+  .banner--primary & {
+    border-color: $color-button-outline-border-inverted-enabled; // #f4f9f8
+    color: $color-button-outline-border-inverted-enabled; // #f4f9f8
+    
+    &:hover {
+      background: rgba(244, 249, 248, 0.1);
+      opacity: 0.9;
+    }
+    
+    &:focus-visible {
+      outline: none;
+      background: rgba(244, 249, 248, 0.15);
+      box-shadow: 0 0 0 2px $color-focus-inner-ring;
+    }
+    
+    &:active {
+      background: rgba(244, 249, 248, 0.2);
+    }
+  }
+  
+  .banner--secondary & {
+    border-color: $color-bg-brand-base-inverted; // #25887e
+    color: $color-bg-brand-base-inverted; // #25887e
+    
+    &:hover {
+      background: rgba(37, 136, 126, 0.1);
+      opacity: 0.9;
+    }
+    
+    &:focus-visible {
+      outline: none;
+      background: rgba(37, 136, 126, 0.15);
+      box-shadow: 0 0 0 2px $color-focus-inner-ring;
+    }
+    
+    &:active {
+      background: rgba(37, 136, 126, 0.2);
+    }
+  }
+}

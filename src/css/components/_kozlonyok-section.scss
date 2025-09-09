@@ -1,0 +1,121 @@
+@use '../../styles/variables.scss' as *;
+// Közlönyök section styles extracted from Home.scss
+.kozlonyok-section {
+  background: $color-bg-neutral-strong; // #e9edf2
+  padding: $spacing-1200 $spacing-1600; // 48px 64px roughly matches Figma
+
+  // Use global .container (max-width: 1200px)
+
+  .heading-2 {
+    font-family: $heading-2-family;
+    font-size: $heading-2-size;
+    font-weight: $heading-2-weight;
+    line-height: $heading-2-line-height;
+    color: $color-text-neutral-strong; // #1c1f26
+    text-align: center;
+    letter-spacing: -0.02em; // slight tracking like Figma
+    margin: 0 0 $spacing-800; // 32px bottom gap
+  }
+
+  .content-switcher {
+    display: inline-flex;
+    gap: $spacing-100; // 4px between segments
+    padding: $spacing-100; // 4px surrounding
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: $radius-rounded; // 1000px
+    margin: 0 auto $spacing-800; // center and add 32px bottom
+    position: relative;
+  }
+
+  .segment {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: $color-button-subtle-text-neutral-enabled; // #282c35
+    padding: $spacing-200 $spacing-400; // 8px 16px
+    border-radius: 16px;
+    font-family: $font-family-primary;
+    font-size: $font-size-sm; // 14px
+    font-weight: $font-weight-bold; // Bold like Figma
+    line-height: $ui-100-sm-bold-line-height; // 1
+    cursor: pointer;
+
+    &.active {
+      background: $color-bg-brand-base-inverted; // #25887e
+      color: $color-text-neutral-inverted; // #fff
+    }
+  }
+
+  .items-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $spacing-600; // 24px
+  }
+
+  .icon-btn {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: $radius-rounded;
+    border: 1.5px solid $color-button-outline-icon-enabled; // #25887e
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: $color-text-neutral-base;
+    cursor: pointer;
+  }
+
+  .item-card {
+    flex: 1 1 auto;
+    background: $color-bg-neutral-subtle; // white
+    border-radius: $radius-base; // 8px
+    overflow: hidden;
+    box-shadow: 0 6px 16px -2px rgba(0, 0, 0, 0.04), 0 24px 40px -4px rgba(0, 0, 0, 0.08);
+
+    .item-content {
+      padding: $spacing-600; // 24px
+    }
+
+    .eyebrow {
+      font-family: $body-sm-family;
+      font-size: $body-sm-size;
+      font-weight: $body-sm-weight;
+      line-height: $body-sm-line-height;
+      color: $color-text-neutral-subtle; // #606b7a
+      margin-bottom: $spacing-200; // 8px
+    }
+
+    .item-title {
+      font-family: $heading-3-family;
+      font-size: $heading-3-size;
+      font-weight: $heading-3-weight;
+      line-height: $heading-3-line-height;
+      color: $color-text-neutral-strong;
+      margin: 0 0 $spacing-300; // 12px
+    }
+
+    .body-md,
+    .item-desc {
+      font-family: $body-md-family;
+      font-size: $body-md-size;
+      font-weight: $body-md-weight;
+      line-height: $body-md-line-height;
+      color: $color-text-neutral-base;
+      margin: 0 0 $spacing-400; // 16px
+    }
+
+    .item-link {
+      display: inline-flex;
+      align-items: center;
+      gap: $spacing-200;
+      color: $color-bg-brand-base-inverted; // use brand color for link
+      font-weight: $font-weight-bold;
+      text-decoration: none;
+
+      &:hover { text-decoration: underline; }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+@use '../../styles/variables.scss' as *;
+// Header styles extracted from Home.scss
+.site-header {
+  .site-header__top {
+    background: $color-text-neutral-strong; // #1c1f26
+    color: $color-text-neutral-inverted; // #fff
+
+    .site-header__top-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 90px; // per Figma
+      gap: $spacing-600; // 24px
+    }
+
+    .site-header__menu {
+      display: flex;
+      align-items: center;
+      gap: $spacing-600; // 24px between menu items
+
+      .menu-link {
+        display: inline-flex;
+        align-items: center;
+        gap: $spacing-200; // 8px between text and icon
+        color: $color-text-neutral-inverted; // white
+        text-decoration: none;
+        font-family: $body-md-family;
+        font-size: $body-md-size; // 16px
+        font-weight: $body-md-weight; // 500
+        line-height: $ui-150-base-regular-line-height; // 1.5
+        letter-spacing: 0; // UI regular
+        padding: $spacing-100 $spacing-200; // 4px 8px subtle hit area
+        border-radius: $radius-small; // 4px
+        transition: opacity 120ms ease, background-color 120ms ease;
+
+        img { width: 20px; height: 20px; display: block; }
+
+        &:hover { opacity: 0.9; }
+        &:focus-visible { outline: none; box-shadow: 0 0 0 2px rgba(255,255,255,0.24); border-radius: $radius-small; }
+      }
+    }
+
+    .site-header__logo{
+
+      img{
+        height: 48px;
+        width: 216px;      
+      }
+    }
+
+    .site-header__actions {
+      display: flex;
+      align-items: center;
+      gap: $spacing-200; // 8px between icon buttons
+      min-width: 260px; // per Figma layout block (right side)
+
+      .icon-circle {
+        width: 40px;
+        height: 40px;
+        border-radius: $radius-rounded; // 1000px
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: $color-button-primary-bg-inverted-enabled; // #f4f9f8
+        border: none;
+        padding: 0;
+        transition: background-color 120ms ease, opacity 120ms ease, border-color 120ms ease;
+
+        &--outline {
+          background: transparent;
+          border: 1.5px solid $color-button-outline-border-inverted-enabled; // #f4f9f8
+        }
+
+        img { width: 20px; height: 20px; display: block; }
+
+        &:hover { opacity: 0.92; }
+        &:focus-visible { outline: none; box-shadow: 0 0 0 2px rgba(255,255,255,0.24); }
+      }
+    }
+  }
+
+  .site-header__secondary {
+    background: $color-bg-brand-strong-inverted; // #1f736a
+    color: $color-text-neutral-inverted;
+
+    .site-header__secondary-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center; // centered per Figma
+      gap: $spacing-600; // 24px between items
+      height: 68px; // per Figma
+    }
+
+    .menu-link {
+      display: inline-flex;
+      align-items: center;
+      gap: $spacing-200; // 8px
+      color: $color-text-neutral-inverted; // white
+      text-decoration: none;
+      font-family: $body-md-family;
+      font-size: $body-md-size; // 16px
+      font-weight: $body-md-weight; // 500
+      line-height: $ui-150-base-regular-line-height; // 1.5
+      padding: $spacing-100 $spacing-200; // 4px 8px
+      border-radius: $radius-small;
+      transition: background-color 120ms ease, opacity 120ms ease;
+
+      &.subtle { background: rgba(0,0,0,0.05); }
+
+      &.has-caret img { width: 20px; height: 20px; }
+
+      &:hover { opacity: 0.92; }
+      &:focus-visible { outline: none; box-shadow: 0 0 0 2px rgba(255,255,255,0.24); }
+    }
+  }
+}

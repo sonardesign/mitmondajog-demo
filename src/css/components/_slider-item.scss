@@ -1,0 +1,114 @@
+@use '../../styles/variables.scss' as *;
+
+.slider-item {
+  background: $color-bg-neutral-subtle; // #ffffff
+  border-radius: $radius-base; // 8px
+  padding: $spacing-600; // 24px
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: $spacing-200; // 8px
+  width: 355.333px; // From Figma
+  cursor: pointer;
+  transition: background-color 120ms ease, box-shadow 120ms ease;
+  border: 1px solid transparent;
+  
+  &:hover {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  &:focus-visible {
+    outline: none;
+    border-color: $color-focus-outer-ring;
+    box-shadow: 0 0 0 2px $color-focus-inner-ring;
+  }
+}
+
+.slider-item__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-200; // 8px
+  min-width: 0; // Allow text to wrap
+}
+
+.slider-item__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  width: 100%;
+  line-height: 0; // From Figma spec
+}
+
+.slider-item__title {
+  font-family: $heading-5-family; // Inter
+  font-size: $heading-5-size; // 18px
+  font-weight: $heading-5-weight; // 700 (bold)
+  line-height: $heading-5-line-height; // 1.25
+  letter-spacing: -0.36px; // From Figma
+  color: $color-text-neutral-strong; // #1c1f26
+  margin: 0;
+  width: 100%;
+  
+  // Handle line breaks as specified in Figma
+  white-space: pre-line;
+}
+
+.slider-item__date {
+  font-family: $body-md-family; // Inter
+  font-size: $body-md-size; // 16px
+  font-weight: $body-md-weight; // 500 (medium)
+  line-height: $body-md-line-height; // 1.5
+  color: $color-text-neutral-subtle; // #606b7a
+  margin: 0;
+  width: 100%;
+}
+
+.slider-item__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  gap: $spacing-200; // 8px
+}
+
+.slider-item__arrow-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-400; // 16px
+  border-radius: $radius-rounded; // 1000px
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 120ms ease, opacity 120ms ease;
+  width: 24px; // From Figma
+  height: 24px; // From Figma
+  flex-shrink: 0;
+  color: $color-text-neutral-subtle;
+  
+  &:hover {
+    background: rgba(0, 0, 0, 0.05);
+    opacity: 0.9;
+  }
+  
+  &:focus-visible {
+    outline: none;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0 2px $color-focus-inner-ring;
+  }
+  
+  &:active {
+    background: rgba(0, 0, 0, 0.15);
+  }
+  
+  svg {
+    width: 20px;
+    height: 20px;
+    display: block;
+  }
+}

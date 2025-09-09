@@ -1,11 +1,22 @@
+@use 'variables' as *;
+
+// Component styles
+@use '../css/components/header';
+@use '../css/components/slider-item';
+@use '../css/components/banner';
+@use '../css/components/banners-section';
+@use '../css/components/search-section';
+@use '../css/components/kozlonyok-section';
+@use '../css/components/button';
+
 :root {
-  font-family: $font-family;
+  font-family: $font-family-primary;
   line-height: 1.5;
   font-weight: $font-weight-normal;
 
-  color-scheme: light dark;
-  color: $text-color;
-  background-color: $background-color;
+  color-scheme: light; // design specifies light theme
+  color: $color-text-neutral-base;
+  background-color: $color-bg-neutral-base;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -25,10 +36,17 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+}
+
+// Global container utility
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $spacing-400;  // 16px
+  padding-right: $spacing-400; // 16px
+  width: 100%;
 }
 
 h1 {
