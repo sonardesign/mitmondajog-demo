@@ -1,5 +1,5 @@
 import React from 'react'
-import './Home.scss'
+import '../css/components/_kozlonyok-section.scss'
 import SliderItem from './SliderItem'
 
 const KozlonyokSection: React.FC = () => {
