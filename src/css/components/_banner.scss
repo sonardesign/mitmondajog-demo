@@ -36,7 +36,7 @@
   gap: $spacing-400; // 16px
   align-items: flex-start;
   justify-content: flex-start;
-  line-height: 0; // From Figma spec
+  line-height: normal; // Fixed: line-height: 0 was hiding text
   text-align: left;
   width: 100%;
 }
