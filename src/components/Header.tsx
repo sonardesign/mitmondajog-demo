@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/components/_header.scss'
 
+import LogoMKNJK from '../assets/jogszabalykereso-logo.svg'
 // Material Design style inline SVG icons
 const LaunchIcon = ({ size = 20 }: { size?: number }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
@@ -46,7 +47,7 @@ const Header: React.FC = () => {
         <div className="container site-header__top-inner">
           <div className="site-header__left">
             <a href="#" className="site-header__logo" aria-label="Főoldal">
-              <span style={{ fontSize: '24px', fontWeight: 'bold', color: 'white' }}>NJT</span>
+              <img src={LogoMKNJK} alt="MKNJK – Magyar Közlöny és Nemzeti Jogszabály Kereső" />
             </a>
           </div>
           <nav className="site-header__menu" aria-label="Fő menü">
@@ -80,10 +81,7 @@ const Header: React.FC = () => {
       <div className="site-header__secondary">
         <div className="container site-header__secondary-inner">
           <a href="#" className="menu-link menu-link--inverse">Magyar Közlöny</a>
-          <button className="menu-link menu-link--inverse has-caret" aria-expanded="false">
-            <span>Ágazati közlöny</span>
-            <ExpandMoreIcon size={20} />
-          </button>
+          <a href="#" className="menu-link menu-link--inverse">Ágazati közlöny</a>
           <a href="#" className="menu-link menu-link--inverse">Jogszabályi aktualitások</a>
           <button className="menu-link menu-link--inverse subtle has-caret" aria-expanded="true">
             <span>Hasznos linkek</span>
