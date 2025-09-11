@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, KeyboardEvent } from 'react'
 import '../css/components/_search-section.scss'
 
 // Material Design style inline SVG icons
@@ -14,7 +14,43 @@ const SearchIcon = ({ size = 20 }: { size?: number }) => (
   </svg>
 )
 
-const SearchSection: React.FC = () => {
+interface SearchSectionProps {
+  onSearch: (query: string) => void
+  searchQuery: string
+  onQueryChange: (query: string) => void
+}
+
+const SearchSection: React.FC<SearchSectionProps> = ({ 
+  onSearch, 
+  searchQuery, 
+  onQueryChange 
+}) => {
+  const [inputValue, setInputValue] = useState(searchQuery)
+
+  const handleSearch = () => {
+    if (inputValue.trim()) {
+      onSearch(inputValue.trim())
+    }
+  }
+
+  const handleKeyPress = (e: KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      handleSearch()
+    }
+  }
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value
+    setInputValue(value)
+    onQueryChange(value)
+  }
+
+  const handleSuggestionClick = (suggestion: string) => {
+    setInputValue(suggestion)
+    onQueryChange(suggestion)
+    onSearch(suggestion)
+  }
+
   return (
     <section className="search-section" data-node-id="1369:17555">
       <div className="search-container" data-node-id="1369:17615">
@@ -46,21 +82,41 @@ const SearchSection: React.FC = () => {
               className="search-input"
               placeholder='Pl.: "Mikor bűntett a közérdekű adattal való visszaélés?" '
               aria-label="Jogi kérdés keresése"
+              value={inputValue}
+              onChange={handleInputChange}
+              onKeyPress={handleKeyPress}
             />
-            <button type="submit" className="search-input__button" aria-label="Keresés">
+            <button 
+              type="button" 
+              className="search-input__button" 
+              aria-label="Keresés"
+              onClick={handleSearch}
+            >
               <SearchIcon size={20} />
             </button>
           </div>
         </div>
         
         <div className="search-suggestions" data-node-id="1369:17569">
-          <button className="search-suggestion" data-node-id="1369:17570">
+          <button 
+            className="search-suggestion" 
+            data-node-id="1369:17570"
+            onClick={() => handleSuggestionClick('Mi az a közérdekű adat?')}
+          >
             Mi az a közérdekű adat?
           </button>
-          <button className="search-suggestion" data-node-id="1369:17571">
+          <button 
+            className="search-suggestion" 
+            data-node-id="1369:17571"
+            onClick={() => handleSuggestionClick('Igénybe vehetem a CSOK pluszt egyedülállóként?')}
+          >
             Igénybe vehetem a CSOK pluszt egyedülállóként?
           </button>
-          <button className="search-suggestion" data-node-id="1369:17572">
+          <button 
+            className="search-suggestion" 
+            data-node-id="1369:17572"
+            onClick={() => handleSuggestionClick('Közúti baleset esetén mi a teendő?')}
+          >
             Közúti baleset esetén mi a teendő?
           </button>
         </div>

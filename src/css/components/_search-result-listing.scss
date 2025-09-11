@@ -374,3 +374,37 @@
     }
   }
 }
+
+// Clear Search Button
+.srl-clear-search {
+  display: flex;
+  justify-content: center;
+  margin-top: $spacing-600; // 24px from load more button
+  
+  .srl-clear-search-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: $spacing-200; // 8px
+    background: transparent;
+    border: 1px solid $color-bg-brand-base-inverted; // #25887e
+    border-radius: $radius-rounded; // 1000px
+    padding: $spacing-300 $spacing-600; // 12px 24px (for 40px height)
+    color: $color-bg-brand-base-inverted; // #25887e
+    font-family: $body-md-family;
+    font-size: $body-md-size; // 16px
+    font-weight: $font-weight-bold; // 700
+    line-height: 1; // 16px
+    cursor: pointer;
+    transition: all 120ms ease;
+    
+    &:hover {
+      background: $color-bg-brand-base-inverted; // #25887e
+      color: $color-text-neutral-inverted; // #ffffff
+    }
+    
+    &:focus-visible {
+      outline: 2px solid $color-focus-outer-ring;
+      outline-offset: 2px;
+    }
+  }
+}
