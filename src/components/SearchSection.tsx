@@ -22,7 +22,6 @@ const SearchSection: React.FC<SearchSectionProps> = ({
 }) => {
   const [inputValue, setInputValue] = useState(searchQuery)
   const [showSuggestions, setShowSuggestions] = useState(false)
-  const [isInputFocused, setIsInputFocused] = useState(false)
 
   const handleSearch = () => {
     if (inputValue.trim()) {
@@ -47,11 +46,9 @@ const SearchSection: React.FC<SearchSectionProps> = ({
     onQueryChange(suggestion)
     onSearch(suggestion)
     setShowSuggestions(false)
-    setIsInputFocused(false)
   }
 
   const handleInputFocus = () => {
-    setIsInputFocused(true)
     // Show suggestions with a sexy delay
     setTimeout(() => {
       setShowSuggestions(true)
@@ -65,7 +62,6 @@ const SearchSection: React.FC<SearchSectionProps> = ({
       return // Don't hide if clicking on suggestions
     }
     
-    setIsInputFocused(false)
     // Hide suggestions with a delay to allow for suggestion clicks
     setTimeout(() => {
       setShowSuggestions(false)
