@@ -1,16 +1,11 @@
 import React, { useState, KeyboardEvent } from 'react'
+import 'remixicon/fonts/remixicon.css'
 import '../css/components/_search-section.scss'
 
 // Material Design style inline SVG icons
 const InfoOutlinedIcon = ({ size = 24 }: { size?: number }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
     <path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
-  </svg>
-)
-
-const SearchIcon = ({ size = 20 }: { size?: number }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
-    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
   </svg>
 )
 
@@ -26,6 +21,8 @@ const SearchSection: React.FC<SearchSectionProps> = ({
   onQueryChange 
 }) => {
   const [inputValue, setInputValue] = useState(searchQuery)
+  const [showSuggestions, setShowSuggestions] = useState(false)
+  const [isInputFocused, setIsInputFocused] = useState(false)
 
   const handleSearch = () => {
     if (inputValue.trim()) {
@@ -49,6 +46,30 @@ const SearchSection: React.FC<SearchSectionProps> = ({
     setInputValue(suggestion)
     onQueryChange(suggestion)
     onSearch(suggestion)
+    setShowSuggestions(false)
+    setIsInputFocused(false)
+  }
+
+  const handleInputFocus = () => {
+    setIsInputFocused(true)
+    // Show suggestions with a sexy delay
+    setTimeout(() => {
+      setShowSuggestions(true)
+    }, 150)
+  }
+
+  const handleInputBlur = (e: React.FocusEvent) => {
+    // Check if the related target is within the suggestions
+    const relatedTarget = e.relatedTarget as HTMLElement
+    if (relatedTarget && relatedTarget.closest('.search-suggestions-dropdown')) {
+      return // Don't hide if clicking on suggestions
+    }
+    
+    setIsInputFocused(false)
+    // Hide suggestions with a delay to allow for suggestion clicks
+    setTimeout(() => {
+      setShowSuggestions(false)
+    }, 150)
   }
 
   return (
@@ -85,6 +106,8 @@ const SearchSection: React.FC<SearchSectionProps> = ({
               value={inputValue}
               onChange={handleInputChange}
               onKeyPress={handleKeyPress}
+              onFocus={handleInputFocus}
+              onBlur={handleInputBlur}
             />
             <button 
               type="button" 
@@ -92,8 +115,66 @@ const SearchSection: React.FC<SearchSectionProps> = ({
               aria-label="Keresés"
               onClick={handleSearch}
             >
-              <SearchIcon size={20} />
+              <i className="ri-search-line"></i>
             </button>
+            {/* Search Suggestions Dropdown */}
+            {showSuggestions && (
+              <div className="search-suggestions-dropdown">
+                <div className="search-suggestions-content">
+                  {/* Trending Searches Column */}
+                  <div className="search-suggestions-column">
+                    <div className="search-suggestions-header">
+                      <i className="ri-fire-line search-suggestions-header-icon"></i>
+                      <span className="search-suggestions-title">Trending searches</span>
+                    </div>
+                    <div className="search-suggestions-list">
+                      <button 
+                        className="search-suggestion-item" 
+                        onClick={() => handleSuggestionClick('közérdekű adat')}
+                        tabIndex={0}
+                      >
+                        <i className="ri-search-line search-suggestion-icon"></i>
+                        <span className="search-suggestion-text">közérdekű adat</span>
+                      </button>
+                      <button 
+                        className="search-suggestion-item" 
+                        onClick={() => handleSuggestionClick('Ki jogosult az otthon start programra')}
+                        tabIndex={0}
+                      >
+                        <i className="ri-search-line search-suggestion-icon"></i>
+                        <span className="search-suggestion-text">Ki jogosult az otthon start programra</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Historical Searches Column */}
+                  <div className="search-suggestions-column">
+                    <div className="search-suggestions-header">
+                      <i className="ri-history-line search-suggestions-header-icon"></i>
+                      <span className="search-suggestions-title">Historical search</span>
+                    </div>
+                    <div className="search-suggestions-list">
+                      <button 
+                        className="search-suggestion-item" 
+                        onClick={() => handleSuggestionClick('Cégalapítás lépései')}
+                        tabIndex={0}
+                      >
+                        <i className="ri-search-line search-suggestion-icon"></i>
+                        <span className="search-suggestion-text">Cégalapítás lépései</span>
+                      </button>
+                      <button 
+                        className="search-suggestion-item" 
+                        onClick={() => handleSuggestionClick('Csendrendelet szabályai')}
+                        tabIndex={0}
+                      >
+                        <i className="ri-search-line search-suggestion-icon"></i>
+                        <span className="search-suggestion-text">Csendrendelet szabályai</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
         

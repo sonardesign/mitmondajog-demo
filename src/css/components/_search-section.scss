@@ -162,8 +162,8 @@
   .search-input__button {
     width: 40px;
     height: 40px;
-    background: rgba(2, 118, 113, 0.05); // subtle brand background
-    border: none;
+    background: rgba(37, 136, 126, 0.1); // More visible background for debugging
+    border: 1px solid rgba(37, 136, 126, 0.3); // Add border to see button boundaries
     border-radius: $radius-rounded; // 1000px
     display: flex;
     align-items: center;
@@ -171,6 +171,9 @@
     cursor: pointer;
     flex-shrink: 0;
     margin: $spacing-300; // 12px margin from container edge
+    color: #25887e; // Direct color value instead of variable
+    position: relative;
+    z-index: 10; // Ensure it's above other elements
 
     img {
       width: 20px;
@@ -178,8 +181,36 @@
       display: block;
     }
 
+    svg {
+      width: 20px !important;
+      height: 20px !important;
+      fill: none !important;
+      stroke: #25887e !important; // Direct color instead of currentColor
+      stroke-width: 2 !important; // Thicker stroke for visibility
+      stroke-linecap: round !important;
+      stroke-linejoin: round !important;
+      display: block !important;
+      pointer-events: none; // Prevent SVG from interfering with clicks
+    }
+
+    i {
+      font-size: 20px !important;
+      color: #25887e !important;
+      line-height: 1 !important;
+      display: block !important;
+      pointer-events: none;
+    }
+
     &:hover {
-      background: rgba(2, 118, 113, 0.1);
+      background: rgba(37, 136, 126, 0.2);
+      
+      svg {
+        stroke: #1f736a !important; // Darker on hover
+      }
+
+      i {
+        color: #1f736a !important; // Darker on hover
+      }
     }
 
     &:focus-visible {
@@ -220,6 +251,133 @@
     &:focus-visible {
       outline: 2px solid $color-focus-inner-ring;
       outline-offset: 2px;
+    }
+  }
+
+  // Search Suggestions Dropdown - Two Column Layout
+  .search-suggestions-dropdown {
+    position: absolute;
+    top: calc(100% + 8px); // 8px gap from input
+    left: 0;
+    right: 0;
+    background: $color-bg-neutral-subtle; // #ffffff
+    border: 1px solid rgba($color-border-neutral-base, 0.2); // #606b7a with opacity
+    border-radius: $radius-base; // 8px
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1), 0 2px 8px rgba(0, 0, 0, 0.06);
+    z-index: 1000;
+    overflow: hidden;
+    animation: slideDown 150ms ease-out;
+    
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .search-suggestions-content {
+      display: flex;
+      min-width: 100%;
+    }
+
+    .search-suggestions-column {
+      flex: 1;
+      
+      &:first-child {
+        border-right: 1px solid rgba($color-border-neutral-base, 0.1);
+      }
+    }
+
+    .search-suggestions-header {
+      display: flex;
+      align-items: center;
+      gap: $spacing-200; // 8px between icon and title
+      padding: $spacing-400 $spacing-500; // 16px 20px
+      border-bottom: 1px solid rgba($color-border-neutral-base, 0.1);
+      background: rgba($color-bg-neutral-base, 0.5); // #f5f7fa with opacity
+
+      .search-suggestions-header-icon {
+        font-size: 16px;
+        color: $color-text-neutral-subtle; // #606b7a
+        flex-shrink: 0;
+      }
+
+      .search-suggestions-title {
+        font-family: $body-sm-family; // Inter
+        font-size: $body-sm-size; // 14px
+        font-weight: $font-weight-bold; // 700
+        line-height: $body-sm-line-height; // 1.5
+        color: $color-text-neutral-subtle; // #606b7a
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+    }
+
+    .search-suggestions-list {
+      max-height: 200px; // Reduced height for two columns
+      overflow-y: auto;
+    }
+
+    .search-suggestion-item {
+      display: flex;
+      align-items: center;
+      gap: $spacing-300; // 12px between icon and text
+      width: 100%;
+      padding: $spacing-400 $spacing-500; // 16px 20px
+      border: none;
+      background: transparent;
+      text-align: left;
+      cursor: pointer;
+      transition: all 120ms ease;
+      border-radius: 0;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &:hover {
+        background: rgba($color-bg-brand-base-inverted, 0.04); // Light teal hover
+      }
+
+      &:focus {
+        outline: none;
+        background: rgba($color-bg-brand-base-inverted, 0.08); // Slightly darker focus
+      }
+
+      &:active {
+        background: rgba($color-bg-brand-base-inverted, 0.12);
+      }
+
+      .search-suggestion-icon {
+        font-size: 16px;
+        color: $color-text-neutral-subtle; // #606b7a
+        flex-shrink: 0;
+        transition: color 120ms ease;
+      }
+
+      .search-suggestion-text {
+        font-family: $body-md-family; // Inter
+        font-size: $body-md-size; // 16px
+        font-weight: $body-md-weight; // 500
+        line-height: $body-md-line-height; // 1.5
+        color: $color-text-neutral-strong; // #1c1f26
+        flex: 1;
+        transition: color 120ms ease;
+      }
+
+      &:hover {
+        .search-suggestion-icon {
+          color: $color-bg-brand-base-inverted; // #25887e
+        }
+        
+        .search-suggestion-text {
+          color: $color-bg-brand-base-inverted; // #25887e
+        }
+      }
     }
   }
 }
