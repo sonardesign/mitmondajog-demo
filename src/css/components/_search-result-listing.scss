@@ -1,0 +1,376 @@
+@use '../../styles/variables.scss' as *;
+
+// Search Result Listing - Pixel Perfect Figma Implementation
+// Based on: https://www.figma.com/design/lycJGhJm5QBU1UpViPx9J8/NJT---DÁP-brand-merge?node-id=1399-14622
+
+.search-result-listing {
+  background: $color-bg-neutral-strong; // #e9edf2 (light gray background from Figma)
+  min-height: 100vh;
+  padding: $spacing-1200 0; // 48px top/bottom
+
+  .srl-container {
+    max-width: 1312px; // Figma container width
+    margin: 0 auto;
+    padding: 0 $spacing-800; // 32px horizontal padding
+  }
+
+  .srl-content {
+    margin-top: $spacing-800; // 32px from title to content
+  }
+
+  .srl-results-container {
+    background: $color-bg-neutral-base; // #f5f7fa (content background)
+    border-radius: $radius-base; // 8px
+    padding: $spacing-800; // 32px
+  }
+}
+
+// Title Block - Centered layout from Figma
+.srl-title-block {
+  text-align: center;
+  margin-bottom: $spacing-1600; // 64px to tabs
+
+  .srl-title {
+    margin: 0 0 $spacing-200; // 8px to subtitle
+    font-family: $heading-2-family; // Inter
+    font-size: $heading-2-size; // 28px
+    font-weight: $heading-2-weight; // 700
+    line-height: $heading-2-line-height; // 1.25 (35px)
+    color: $color-text-neutral-strong; // #1c1f26
+    letter-spacing: -0.02em; // -0.56px at 28px
+  }
+
+  .srl-subtitle {
+    margin: 0;
+    font-family: $body-sm-family; // Inter
+    font-size: $font-size-xs; // 12px
+    font-weight: $font-weight-medium; // 500
+    line-height: 1.5; // 18px
+    color: $color-text-neutral-placeholder; // #a3abba
+    letter-spacing: 0;
+  }
+}
+
+// Tabs - Horizontal tab group from Figma
+.srl-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0; // No gap, tabs are connected
+  margin: 0 auto;
+  width: fit-content;
+
+  .srl-tab {
+    background: transparent;
+    border: none;
+    padding: $spacing-400 $spacing-500; // 16px 20px
+    font-family: $body-lg-family; // Inter
+    font-size: $body-lg-size; // 18px
+    font-weight: $font-weight-normal; // 400
+    line-height: 1; // 18px
+    color: $color-button-subtle-text-neutral-enabled; // #282c35
+    cursor: pointer;
+    transition: all 120ms ease;
+    border-radius: 0;
+    position: relative;
+    
+    // First tab styling (active)
+    &:first-child {
+      background: $color-bg-neutral-base; // #f5f7fa (active background)
+      border-radius: $radius-base 0 0 $radius-base; // 8px left corners
+      padding-left: $spacing-400; // 16px
+      padding-right: $spacing-600; // 24px
+    }
+
+    // Other tabs
+    &:not(:first-child) {
+      background: rgba($color-bg-brand-base-inverted, 0.05); // 5% opacity teal
+      
+      &:hover {
+        background: rgba($color-bg-brand-base-inverted, 0.1); // 10% on hover
+      }
+    }
+
+    &:last-child {
+      border-radius: 0 $radius-base $radius-base 0; // 8px right corners
+    }
+
+    &:focus-visible {
+      outline: 2px solid $color-focus-outer-ring;
+      outline-offset: 2px;
+    }
+  }
+}
+
+// Summary Answer - Teal background section
+.srl-summary-answer {
+  background: $color-bg-brand-base-inverted; // #25887e (teal background)
+  border-radius: $radius-base; // 8px
+  padding: $spacing-800; // 32px
+  margin-bottom: $spacing-600; // 24px to callout
+  text-align: left;
+
+  .srl-summary-title {
+    margin: 0 0 $spacing-600; // 24px to content
+    font-family: $heading-5-family; // Inter
+    font-size: $heading-5-size; // 18px
+    font-weight: $heading-5-weight; // 700
+    line-height: $heading-5-line-height; // 1.25 (22.5px)
+    color: $color-text-neutral-inverted; // #ffffff
+    letter-spacing: -0.02em; // -0.36px at 18px
+  }
+
+  .srl-summary-content {
+    margin-bottom: $spacing-800; // 32px to button
+
+    p {
+      margin: 0;
+      font-family: $body-md-family; // Inter
+      font-size: $body-md-size; // 16px
+      font-weight: $body-md-weight; // 500
+      line-height: $body-md-line-height; // 1.5 (24px)
+      color: $color-text-neutral-inverted; // #ffffff
+      letter-spacing: 0;
+    }
+  }
+
+  .srl-summary-cta-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .srl-summary-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: $spacing-200; // 8px
+    background: transparent;
+    border: 1px solid $color-button-outline-border-inverted-enabled; // #f4f9f8
+    border-radius: $radius-rounded; // 1000px (pill)
+    padding: $spacing-300 $spacing-600; // 12px 24px (for 40px height)
+    font-family: $body-md-family;
+    font-size: $body-md-size; // 16px
+    font-weight: $font-weight-bold; // 700
+    line-height: 1.2; // 19.36px
+    color: $color-button-outline-icon-inverted-enabled; // #f4f9f8
+    cursor: pointer;
+    transition: all 120ms ease;
+    text-align: center;
+
+    &:hover {
+      background: rgba(244, 249, 248, 0.1);
+    }
+
+    &:focus-visible {
+      outline: 2px solid $color-focus-inner-ring;
+      outline-offset: 2px;
+    }
+  }
+}
+
+// Callout - Light teal background with icon
+.srl-callout {
+  display: flex;
+  align-items: flex-start;
+  gap: $spacing-300; // 12px between icon and content
+  background: $color-bg-brand-medium; // #ddeceb (light teal)
+  border-radius: $radius-base; // 8px
+  padding: $spacing-300; // 12px (for 48px total height)
+  margin-bottom: $spacing-600; // 24px to answers
+
+  .srl-callout-icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    color: $color-text-neutral-strong; // #1c1f26
+  }
+
+  .srl-callout-content {
+    flex: 1;
+  }
+
+  .srl-callout-text {
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+
+  .srl-callout-title {
+    font-family: $body-md-family;
+    font-size: $body-md-size; // 16px
+    font-weight: $font-weight-bold; // 700
+    line-height: 1.25; // 20px
+    color: $color-text-neutral-strong; // #1c1f26
+    margin: 0;
+  }
+
+  .srl-callout-description {
+    font-family: $body-md-family;
+    font-size: $body-md-size; // 16px
+    font-weight: $font-weight-medium; // 500
+    line-height: $body-md-line-height; // 1.5 (24px)
+    color: $color-text-neutral-base; // #404753
+    margin: 0;
+  }
+}
+
+// Answers - Search result cards
+.srl-answers {
+  .srl-answers-list {
+    display: grid;
+    gap: $spacing-600; // 24px between cards
+  }
+}
+
+.srl-answer {
+  background: $color-bg-neutral-subtle; // #ffffff
+  border-radius: $radius-base; // 8px
+  padding: $spacing-800; // 32px
+  text-align: left;
+  
+  .srl-answer-header {
+    margin-bottom: $spacing-600; // 24px to meta
+    
+    .srl-answer-title-wrapper {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: $spacing-400; // 16px
+    }
+    
+    .srl-answer-title {
+      flex: 1;
+      margin: 0;
+      font-family: $heading-5-family; // Inter
+      font-size: $heading-5-size; // 18px
+      font-weight: $heading-5-weight; // 700
+      line-height: $heading-5-line-height; // 1.25 (22.5px)
+      color: $color-text-neutral-strong; // #1c1f26
+      letter-spacing: -0.02em; // -0.36px at 18px
+    }
+    
+    .srl-answer-external-link {
+      flex-shrink: 0;
+      background: transparent;
+      border: none;
+      padding: 0;
+      width: 24px;
+      height: 24px;
+      color: $color-text-neutral-strong;
+      cursor: pointer;
+      
+      &:hover {
+        color: $color-bg-brand-base-inverted;
+      }
+    }
+  }
+
+  .srl-answer-body {
+    .srl-answer-meta {
+      font-family: $body-sm-family; // Inter
+      font-size: $body-sm-size; // 14px
+      font-weight: $body-sm-weight; // 500
+      line-height: $body-sm-line-height; // 1.5 (21px)
+      color: $color-text-neutral-subtle; // #606b7a
+      margin: 0 0 $spacing-600; // 24px to content
+      padding: $spacing-200 0; // 8px vertical
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+      margin: 0 0 $spacing-600; // 24px between paragraphs
+      font-family: $body-md-family; // Inter
+      font-size: $body-md-size; // 16px
+      font-weight: $body-md-weight; // 500
+      line-height: $body-md-line-height; // 1.5 (24px)
+      color: $color-text-neutral-base; // #404753
+      letter-spacing: 0;
+      
+      &:last-of-type {
+        margin-bottom: $spacing-800; // 32px to actions
+      }
+    }
+    
+    .srl-answer-actions {
+      display: flex;
+      align-items: center;
+      gap: $spacing-200; // 8px between buttons
+      margin-top: $spacing-800; // 32px from content
+      justify-content: flex-end;
+    }
+    
+    .srl-answer-action-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: $spacing-200; // 8px between icon and text
+      background: rgba($color-bg-brand-base-inverted, 0.05); // 5% teal
+      border: none;
+      border-radius: $radius-rounded; // 1000px
+      padding: $spacing-200; // 8px (for 32px height)
+      color: $color-bg-brand-base-inverted; // #25887e
+      font-family: $body-sm-family;
+      font-size: $body-sm-size; // 14px
+      font-weight: $font-weight-bold; // 700
+      line-height: 1; // 14px
+      cursor: pointer;
+      transition: all 120ms ease;
+      
+      &.srl-answer-bookmark {
+        width: 32px;
+        height: 32px;
+        justify-content: center;
+        padding: $spacing-200;
+      }
+      
+      &.srl-answer-expand {
+        padding: $spacing-200 $spacing-400; // 8px 16px
+        height: 32px;
+      }
+      
+      &:hover {
+        background: rgba($color-bg-brand-base-inverted, 0.1); // 10% on hover
+      }
+      
+      &:focus-visible {
+        outline: 2px solid $color-focus-outer-ring;
+        outline-offset: 2px;
+      }
+      
+      svg {
+        flex-shrink: 0;
+      }
+    }
+  }
+}
+
+// Load More Button
+.srl-load-more {
+  display: flex;
+  justify-content: center;
+  margin-top: $spacing-1000; // 40px from last answer
+  
+  .srl-load-more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: $spacing-200; // 8px
+    background: $color-bg-brand-base-inverted; // #25887e
+    border: none;
+    border-radius: $radius-rounded; // 1000px
+    padding: $spacing-300 $spacing-600; // 12px 24px (for 40px height)
+    color: $color-text-neutral-inverted; // #ffffff
+    font-family: $body-md-family;
+    font-size: $body-md-size; // 16px
+    font-weight: $font-weight-bold; // 700
+    line-height: 1; // 16px
+    cursor: pointer;
+    transition: all 120ms ease;
+    
+    &:hover {
+      background: $color-bg-brand-strong-inverted; // #1f736a (darker teal)
+    }
+    
+    &:focus-visible {
+      outline: 2px solid $color-focus-inner-ring;
+      outline-offset: 2px;
+    }
+  }
+}
