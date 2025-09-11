@@ -31,7 +31,7 @@ const SearchResultListing: React.FC<SearchResultListingProps> = ({
 
 
   const loadMore = () => {
-    setVisibleCount((prev) => prev + 3); // mindig 3-mal több
+    setVisibleCount((prev) => prev + 3);
   };
 
   return (
@@ -40,7 +40,8 @@ const SearchResultListing: React.FC<SearchResultListingProps> = ({
       <div className="srl-results-container">
         <SummaryAnswer
           title={searchResults.summaryAnswer.title}
-          content={<p>{searchResults.summaryAnswer.description}</p>}
+          shortDescription={searchResults.summaryAnswer.shortDescription}
+          description={searchResults.summaryAnswer.description}
         />
         <Callout
           title={searchResults.callout.title}
