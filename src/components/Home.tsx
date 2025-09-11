@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import './Home.scss'
 import Header from './Header'
 import SearchSection from './SearchSection'
