@@ -1,12 +1,12 @@
 {
-  "searchResults": {
-    "közérdekű adat": {
+  "searchResults": [
+    {
       "searchTerm": "Közérdekű adat",
       "resultId": "b0bcf638-4e63-4bea-b54e-3db63db2d020",
       "summaryAnswer": {
         "title": "Összegzett válasz",
-        "text": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;",
-        "extendedText": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;\n\nA közérdekű adat fogalma széles körű és magában foglalja mindazon információkat, amelyek a közfeladatot ellátó szervek működésével kapcsolatosak. Ez kiterjed a szervezeti struktúrára, a döntéshozatali folyamatokra, a költségvetési információkra, valamint a szakmai tevékenység eredményességének értékelésére is."
+        "shortDescription": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;",
+        "description": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;\n\nA közérdekű adat fogalma széles körű és magában foglalja mindazon információkat, amelyek a közfeladatot ellátó szervek működésével kapcsolatosak. Ez kiterjed a szervezeti struktúrára, a döntéshozatali folyamatokra, a költségvetési információkra, valamint a szakmai tevékenység eredményességének értékelésére is."
       },
       "callout": {
         "title": "Fontos információ",
@@ -14,48 +14,32 @@
       },
       "answers": [
         {
-          "id": "answer-1",
           "title": "2011. évi CXII. törvény az információs önrendelkezési jogról és az információszabadságról",
           "meta": "2025. 01. 01. - Nem ismert",
-          "text": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;",
-          "expanded": true,
-          "actions": {
-            "showLess": "Kevesebb mutatása",
-            "showMore": "Több mutatása"
-          }
+          "shortDescription": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;",
+          "description": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;\n\nA közérdekű adat fogalma széles körű és magában foglalja mindazon információkat, amelyek a közfeladatot ellátó szervek működésével kapcsolatosak. Ez kiterjed a szervezeti struktúrára, a döntéshozatali folyamatokra, a költségvetési információkra, valamint a szakmai tevékenység eredményességének értékelésére is."
         },
         {
-          "id": "answer-2", 
           "title": "2011. évi CXII. törvény az információs önrendelkezési jogról és az információszabadságról",
           "meta": "2025. 01. 01. - Nem ismert",
-          "text": "5. * közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett...",
-          "expanded": false,
-          "actions": {
-            "showLess": "Kevesebb mutatása",
-            "showMore": "Több mutatása"
-          }
+          "shortDescription": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;",
+          "description": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;\n\nA közérdekű adat fogalma széles körű és magában foglalja mindazon információkat, amelyek a közfeladatot ellátó szervek működésével kapcsolatosak. Ez kiterjed a szervezeti struktúrára, a döntéshozatali folyamatokra, a költségvetési információkra, valamint a szakmai tevékenység eredményességének értékelésére is."
         },
         {
-          "id": "answer-3",
-          "title": "2011. évi CXII. törvény az információs önrendelkezési jogról és az információszabadságról", 
+          "title": "2011. évi CXII. törvény az információs önrendelkezési jogról és az információszabadságról",
           "meta": "2025. 01. 01. - Nem ismert",
-          "text": "5. * közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől...",
-          "expanded": false,
-          "actions": {
-            "showLess": "Kevesebb mutatása", 
-            "showMore": "Több mutatása"
-          }
+          "shortDescription": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;",
+          "description": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;\n\nA közérdekű adat fogalma széles körű és magában foglalja mindazon információkat, amelyek a közfeladatot ellátó szervek működésével kapcsolatosak. Ez kiterjed a szervezeti struktúrára, a döntéshozatali folyamatokra, a költségvetési információkra, valamint a szakmai tevékenység eredményességének értékelésére is."
         }
-      ],
-      "loadMoreText": "További találatok"
+      ]
     },
-    "mi az a közérdekű adat?": {
+    {
       "searchTerm": "Mi az a közérdekű adat?",
       "resultId": "b0bcf638-4e63-4bea-b54e-3db63db2d020",
       "summaryAnswer": {
         "title": "Összegzett válasz",
-        "text": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;",
-        "extendedText": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;\n\nA közérdekű adat fogalma széles körű és magában foglalja mindazon információkat, amelyek a közfeladatot ellátó szervek működésével kapcsolatosak. Ez kiterjed a szervezeti struktúrára, a döntéshozatali folyamatokra, a költségvetési információkra, valamint a szakmai tevékenység eredményességének értékelésére is."
+        "shortDescription": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;",
+        "description": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;\n\nA közérdekű adat fogalma széles körű és magában foglalja mindazon információkat, amelyek a közfeladatot ellátó szervek működésével kapcsolatosak. Ez kiterjed a szervezeti struktúrára, a döntéshozatali folyamatokra, a költségvetési információkra, valamint a szakmai tevékenység eredményességének értékelésére is."
       },
       "callout": {
         "title": "Fontos információ",
@@ -63,40 +47,171 @@
       },
       "answers": [
         {
-          "id": "answer-1",
           "title": "2011. évi CXII. törvény az információs önrendelkezési jogról és az információszabadságról",
           "meta": "2025. 01. 01. - Nem ismert",
-          "text": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;",
-          "expanded": true,
-          "actions": {
-            "showLess": "Kevesebb mutatása",
-            "showMore": "Több mutatása"
-          }
+          "shortDescription": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;",
+          "description": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;\n\nA közérdekű adat fogalma széles körű és magában foglalja mindazon információkat, amelyek a közfeladatot ellátó szervek működésével kapcsolatosak. Ez kiterjed a szervezeti struktúrára, a döntéshozatali folyamatokra, a költségvetési információkra, valamint a szakmai tevékenység eredményességének értékelésére is."
         },
         {
-          "id": "answer-2", 
           "title": "2011. évi CXII. törvény az információs önrendelkezési jogról és az információszabadságról",
           "meta": "2025. 01. 01. - Nem ismert",
-          "text": "5. * közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett...",
-          "expanded": false,
-          "actions": {
-            "showLess": "Kevesebb mutatása",
-            "showMore": "Több mutatása"
-          }
+          "shortDescription": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;",
+          "description": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;\n\nA közérdekű adat fogalma széles körű és magában foglalja mindazon információkat, amelyek a közfeladatot ellátó szervek működésével kapcsolatosak. Ez kiterjed a szervezeti struktúrára, a döntéshozatali folyamatokra, a költségvetési információkra, valamint a szakmai tevékenység eredményességének értékelésére is."
         },
         {
-          "id": "answer-3",
-          "title": "2011. évi CXII. törvény az információs önrendelkezési jogról és az információszabadságról", 
+          "title": "2011. évi CXII. törvény az információs önrendelkezési jogról és az információszabadságról",
           "meta": "2025. 01. 01. - Nem ismert",
-          "text": "5. * közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől...",
-          "expanded": false,
-          "actions": {
-            "showLess": "Kevesebb mutatása", 
-            "showMore": "Több mutatása"
-          }
+          "shortDescription": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;",
+          "description": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;\n\nA közérdekű adat fogalma széles körű és magában foglalja mindazon információkat, amelyek a közfeladatot ellátó szervek működésével kapcsolatosak. Ez kiterjed a szervezeti struktúrára, a döntéshozatali folyamatokra, a költségvetési információkra, valamint a szakmai tevékenység eredményességének értékelésére is."
+        },
+        {
+          "title": "2011. évi CXII. törvény az információs önrendelkezési jogról és az információszabadságról",
+          "meta": "2025. 01. 01. - Nem ismert",
+          "shortDescription": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;",
+          "description": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;\n\nA közérdekű adat fogalma széles körű és magában foglalja mindazon információkat, amelyek a közfeladatot ellátó szervek működésével kapcsolatosak. Ez kiterjed a szervezeti struktúrára, a döntéshozatali folyamatokra, a költségvetési információkra, valamint a szakmai tevékenység eredményességének értékelésére is."
+        },
+        {
+          "title": "2011. évi CXII. törvény az információs önrendelkezési jogról és az információszabadságról",
+          "meta": "2025. 01. 01. - Nem ismert",
+          "shortDescription": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;",
+          "description": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;\n\nA közérdekű adat fogalma széles körű és magában foglalja mindazon információkat, amelyek a közfeladatot ellátó szervek működésével kapcsolatosak. Ez kiterjed a szervezeti struktúrára, a döntéshozatali folyamatokra, a költségvetési információkra, valamint a szakmai tevékenység eredményességének értékelésére is."
+        },
+        {
+          "title": "2011. évi CXII. törvény az információs önrendelkezési jogról és az információszabadságról",
+          "meta": "2025. 01. 01. - Nem ismert",
+          "shortDescription": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;",
+          "description": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;\n\nA közérdekű adat fogalma széles körű és magában foglalja mindazon információkat, amelyek a közfeladatot ellátó szervek működésével kapcsolatosak. Ez kiterjed a szervezeti struktúrára, a döntéshozatali folyamatokra, a költségvetési információkra, valamint a szakmai tevékenység eredményességének értékelésére is."
+        },
+        {
+          "title": "2011. évi CXII. törvény az információs önrendelkezési jogról és az információszabadságról",
+          "meta": "2025. 01. 01. - Nem ismert",
+          "shortDescription": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;",
+          "description": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;\n\nA közérdekű adat fogalma széles körű és magában foglalja mindazon információkat, amelyek a közfeladatot ellátó szervek működésével kapcsolatosak. Ez kiterjed a szervezeti struktúrára, a döntéshozatali folyamatokra, a költségvetési információkra, valamint a szakmai tevékenység eredményességének értékelésére is."
+        },
+        {
+          "title": "2011. évi CXII. törvény az információs önrendelkezési jogról és az információszabadságról",
+          "meta": "2025. 01. 01. - Nem ismert",
+          "shortDescription": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;",
+          "description": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;\n\nA közérdekű adat fogalma széles körű és magában foglalja mindazon információkat, amelyek a közfeladatot ellátó szervek működésével kapcsolatosak. Ez kiterjed a szervezeti struktúrára, a döntéshozatali folyamatokra, a költségvetési információkra, valamint a szakmai tevékenység eredményességének értékelésére is."
+        },
+        {
+          "title": "2011. évi CXII. törvény az információs önrendelkezési jogról és az információszabadságról",
+          "meta": "2025. 01. 01. - Nem ismert",
+          "shortDescription": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;",
+          "description": "(5) közérdekű adat: az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy azt átvevő szerv, szervezet vagy személy (a továbbiakban együtt: közfeladatot ellátó szerv) kezelésében lévő és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett, a személyes adat fogalma alá nem eső, bármilyen módon vagy formában rögzített információ vagy ismeret, függetlenül kezelésének módjától, önálló vagy gyűjteményes jellegétől, így különösen a hatáskörre, illetékességre, szervezeti felépítésre, szakmai tevékenységre, annak eredményességére is kiterjedő értékelésére, a birtokolt adatfajtákra és a működést szabályozó jogszabályokra, valamint a gazdálkodásra, a megkötött szerződésekre vonatkozó adat;\n\nA közérdekű adat fogalma széles körű és magában foglalja mindazon információkat, amelyek a közfeladatot ellátó szervek működésével kapcsolatosak. Ez kiterjed a szervezeti struktúrára, a döntéshozatali folyamatokra, a költségvetési információkra, valamint a szakmai tevékenység eredményességének értékelésére is."
         }
-      ],
-      "loadMoreText": "További találatok"
+      ]
+    },
+    {
+      "searchTerm": "Adatvédelem",
+      "resultId": "1a23bc45-678d-4ef0-9c11-22334455abcd",
+      "summaryAnswer": {
+        "title": "Összegzett válasz",
+        "shortDescription": "Az adatvédelem az egyének személyes adatainak kezelésével kapcsolatos jogi és technikai intézkedések összessége, amelyek célja a visszaélések megelőzése, az adatok bizalmasságának, sértetlenségének és rendelkezésre állásának biztosítása.",
+        "description": "Az adatvédelem az egyének személyes adatainak kezelésével kapcsolatos jogi és technikai intézkedések összessége, amelyek célja a visszaélések megelőzése, az adatok bizalmasságának, sértetlenségének és rendelkezésre állásának biztosítása. Az Európai Unióban ezt elsősorban a GDPR szabályozza."
+      },
+      "callout": {
+        "title": "Figyelem",
+        "text": "A személyes adatok kezelése csak jogszerű alapon történhet, az érintett hozzájárulása vagy jogszabályi kötelezettség alapján."
+      },
+      "answers": [
+        {
+          "title": "2016/679/EU rendelet (GDPR)",
+          "meta": "2018. 05. 25. - Jelenleg hatályos",
+          "shortDescription": "A rendelet célja, hogy magas szintű védelmet biztosítson az EU polgárainak személyes adatai számára, és egységes szabályokat hozzon létre az adatok szabad áramlásának biztosítása mellett.",
+          "description": "A rendelet célja, hogy magas szintű védelmet biztosítson az EU polgárainak személyes adatai számára, és egységes szabályokat hozzon létre az adatok szabad áramlásának biztosítása mellett."
+        },
+        {
+          "title": "2011. évi CXII. törvény (Infotv.)",
+          "meta": "2012. 01. 01. - Jelenleg hatályos",
+          "shortDescription": "Az Infotv. rendelkezik többek között a Nemzeti Adatvédelmi és Információszabadság Hatóság (NAIH) feladatairól és hatásköréről is.",
+          "description": "Az Infotv. rendelkezik többek között a Nemzeti Adatvédelmi és Információszabadság Hatóság (NAIH) feladatairól és hatásköréről is."
+        }
+      ]
+    },
+    {
+      "searchTerm": "Szerződés",
+      "resultId": "9f87a6c5-2e4d-4a89-b1d1-11223344eeff",
+      "summaryAnswer": {
+        "title": "Összegzett válasz",
+        "shortDescription": "A szerződés az egyik legfontosabb jogi eszköz a polgári jogban. Írásban vagy szóban is létrejöhet, de bizonyos típusaihoz (pl. ingatlan adásvétel) kötelező az írásbeliség.",
+        "description": "A szerződés az egyik legfontosabb jogi eszköz a polgári jogban. Írásban vagy szóban is létrejöhet, de bizonyos típusaihoz (pl. ingatlan adásvétel) kötelező az írásbeliség. A szerződések szabályait a Polgári Törvénykönyv tartalmazza."
+      },
+      "callout": {
+        "title": "Fontos",
+        "text": "A szerződés érvényességéhez szükséges a felek kölcsönös és egybehangzó akaratnyilatkozata."
+      },
+      "answers": [
+        {
+          "title": "2013. évi V. törvény (Polgári Törvénykönyv)",
+          "meta": "2014. 03. 15. - Jelenleg hatályos",
+          "shortDescription": "A szerződés akkor jön létre, ha a felek akaratnyilatkozata találkozik.",
+          "description": "A szerződés akkor jön létre, ha a felek akaratnyilatkozata találkozik. A Ptk. részletesen szabályozza a szerződések érvénytelenségének eseteit, valamint a jogkövetkezményeket."
+        }
+      ]
+    },
+    {
+      "searchTerm": "Igénybe vehetem a CSOK pluszt egyedülállóként?",
+      "resultId": "1e92a8d0-2a41-4eaf-8d55-7c9f0138a001",
+      "summaryAnswer": {
+        "title": "Összegzett válasz",
+        "shortDescription": "A 2024-ben bevezetett CSOK Plusz egy olyan állami támogatás, amely kifejezetten házaspárok lakáscélú hitelfelvételéhez nyújt segítséget.",
+        "description": "A 2024-ben bevezetett CSOK Plusz egy olyan állami támogatás, amely kifejezetten házaspárok lakáscélú hitelfelvételéhez nyújt segítséget. A program feltétele, hogy a pár házastársi kapcsolatban álljon, és vállaljon gyermek(eke)t, vagy már meglévő gyermek(ek) nevelését igazolja. Egyedülállók számára a konstrukció sajnos nem elérhető, így számukra más lakhatási támogatások jöhetnek szóba, például piaci alapú hitelek vagy önkormányzati támogatási formák."
+      },
+      "callout": {
+        "title": "Fontos információ",
+        "text": "A CSOK Plusz kizárólag házaspárok számára elérhető támogatási forma."
+      },
+      "answers": [
+        {
+          "title": "Kormányrendelet a CSOK Pluszról",
+          "meta": "2024. 01. 01. - Hatályos",
+          "shortDescription": "A CSOK Plusz jogszabályi kereteit a kormányrendelet határozza meg, amely kimondja, hogy a támogatás kizárólag házastársi kapcsolatban élők számára biztosított.",
+          "description": "A CSOK Plusz jogszabályi kereteit a kormányrendelet határozza meg, amely kimondja, hogy a támogatás kizárólag házastársi kapcsolatban élők számára biztosított. Egyedülálló személyek nem jogosultak az igénybevételre."
+        }
+      ]
+    },
+    {
+      "searchTerm": "Közúti baleset esetén mi a teendő?",
+      "resultId": "9c1c74e5-6a33-4a8f-b16f-5ad61dca9002",
+      "summaryAnswer": {
+        "title": "Összegzett válasz",
+        "shortDescription": "Amennyiben közúti baleset történik, először a saját és az érintettek biztonságáról kell gondoskodni.",
+        "description": "Amennyiben közúti baleset történik, először a saját és az érintettek biztonságáról kell gondoskodni. Ez magában foglalja a jármű leállítását, az elakadásjelző háromszög kihelyezését, és a vészvillogó használatát. Sérülés esetén azonnal hívni kell a 112-es segélyhívó számot, és szükség esetén elsősegélyt kell nyújtani. Anyagi káros balesetnél, ha nincs személyi sérülés, a felek közös megegyezéssel tölthetnek ki kárbejelentőt. Rendőri intézkedés szükséges, ha személyi sérülés történt, vagy a felek nem tudnak megegyezni a felelősségről."
+      },
+      "callout": {
+        "title": "Fontos információ",
+        "text": "Súlyos baleset esetén mindig hívni kell a segélyhívót (112), és rendőri intézkedésre is szükség van."
+      },
+      "answers": [
+        {
+          "title": "KRESZ előírások baleset esetén",
+          "meta": "2025. 01. 01. - Hatályos",
+          "shortDescription": "A KRESZ előírja, hogy baleset esetén a járművezető köteles a járművét azonnal megállítani, a baleset helyszínét biztosítani (elakadásjelző háromszög, vészvillogó), valamint a sérültek részére segítséget nyújtani.",
+          "description": "A KRESZ előírja, hogy baleset esetén a járművezető köteles a járművét azonnal megállítani, a baleset helyszínét biztosítani (elakadásjelző háromszög, vészvillogó), valamint a sérültek részére segítséget nyújtani. Ha személyi sérülés történik, a segélyhívó értesítése kötelező."
+        }
+      ]
+    },
+    {
+      "searchTerm": "Ki jogosult az otthon start programra?",
+      "resultId": "d4f5a1b2-3c6d-4e8f-9b12-7a9d5e8c0f34",
+      "summaryAnswer": {
+        "title": "Összegzett válasz",
+        "shortDescription": "Az Otthon Start program hiteltámogatás első lakásukat vásárló fiatalok számára, bizonyos korhatár és jövedelmi kritériumok mellett érhető el.",
+        "description": "Az Otthon Start program hiteltámogatás első lakásukat vásárló fiatalok számára, bizonyos korhatár és jövedelmi kritériumok mellett érhető el. A program célja, hogy megkönnyítse a lakáshoz jutást azok számára, akik még nem rendelkeznek saját ingatlannal. A jogosultság feltételei közé tartozik, hogy az igénylők életkora ne haladja meg a meghatározott maximumot, valamint a jövedelmük feleljen meg a bank és a jogszabály által előírt követelményeknek. Emellett a lakás vételára sem haladhatja meg a támogatásban rögzített felső határt."
+      },
+      "callout": {
+        "title": "Fontos információ",
+        "text": "A pontos feltételek idővel és bankonként változhatnak, mindig ellenőrizd az aktuális OTP ajánlatot."
+      },
+      "answers": [
+        {
+          "title": "OTP Otthon Start kalkulátor feltételei",
+          "meta": "OTP Bank – aktuális információ",
+          "shortDescription": "Az OTP Otthon Start hitel támogatás csak akkor vehető igénybe, ha nincs saját lakásod, megfelelsz az életkori és jövedelmi feltételeknek, és a választott ingatlan értéke nem lépi túl a meghatározott maximumot.",
+          "description": "Az OTP Otthon Start hitel támogatás csak akkor vehető igénybe, ha nincs saját lakásod, megfelelsz az életkori és jövedelmi feltételeknek, és a választott ingatlan értéke nem lépi túl a meghatározott maximumot. Az igénylőknek igazolniuk kell, hogy nem rendelkeznek másik lakóingatlan tulajdonjogával, továbbá a jövedelmüknek bele kell férnie az előírt támogatott sávba. A program kifejezetten arra irányul, hogy a fiatal első lakásvásárlókat támogassa, így a konstrukció igénybevételének korhatára is meghatározott. A lakás értéke szintén limitált, amit banki és jogszabályi feltételek szabályoznak."
+        }
+      ]
     }
-  }
+  ]
 }

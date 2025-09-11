@@ -72,7 +72,7 @@
     transition: all 120ms ease;
     border-radius: 0;
     position: relative;
-    
+
     // First tab styling (active)
     &:first-child {
       background: $color-bg-neutral-base; // #f5f7fa (active background)
@@ -84,7 +84,7 @@
     // Other tabs
     &:not(:first-child) {
       background: rgba($color-bg-brand-base-inverted, 0.05); // 5% opacity teal
-      
+
       &:hover {
         background: rgba($color-bg-brand-base-inverted, 0.1); // 10% on hover
       }
@@ -190,7 +190,7 @@
   .srl-callout-text {
     display: flex;
     align-items: center;
-    gap: 0;
+    gap: 5px;
   }
 
   .srl-callout-title {
@@ -225,17 +225,17 @@
   border-radius: $radius-base; // 8px
   padding: $spacing-800; // 32px
   text-align: left;
-  
+
   .srl-answer-header {
     margin-bottom: $spacing-600; // 24px to meta
-    
+
     .srl-answer-title-wrapper {
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
       gap: $spacing-400; // 16px
     }
-    
+
     .srl-answer-title {
       flex: 1;
       margin: 0;
@@ -246,7 +246,7 @@
       color: $color-text-neutral-strong; // #1c1f26
       letter-spacing: -0.02em; // -0.36px at 18px
     }
-    
+
     .srl-answer-external-link {
       flex-shrink: 0;
       background: transparent;
@@ -256,7 +256,7 @@
       height: 24px;
       color: $color-text-neutral-strong;
       cursor: pointer;
-      
+
       &:hover {
         color: $color-bg-brand-base-inverted;
       }
@@ -284,12 +284,12 @@
       line-height: $body-md-line-height; // 1.5 (24px)
       color: $color-text-neutral-base; // #404753
       letter-spacing: 0;
-      
+
       &:last-of-type {
         margin-bottom: $spacing-800; // 32px to actions
       }
     }
-    
+
     .srl-answer-actions {
       display: flex;
       align-items: center;
@@ -297,7 +297,7 @@
       margin-top: $spacing-800; // 32px from content
       justify-content: flex-end;
     }
-    
+
     .srl-answer-action-btn {
       display: inline-flex;
       align-items: center;
@@ -313,28 +313,28 @@
       line-height: 1; // 14px
       cursor: pointer;
       transition: all 120ms ease;
-      
+
       &.srl-answer-bookmark {
         width: 32px;
         height: 32px;
         justify-content: center;
         padding: $spacing-200;
       }
-      
+
       &.srl-answer-expand {
         padding: $spacing-200 $spacing-400; // 8px 16px
         height: 32px;
       }
-      
+
       &:hover {
         background: rgba($color-bg-brand-base-inverted, 0.1); // 10% on hover
       }
-      
+
       &:focus-visible {
         outline: 2px solid $color-focus-outer-ring;
         outline-offset: 2px;
       }
-      
+
       svg {
         flex-shrink: 0;
       }
@@ -347,7 +347,7 @@
   display: flex;
   justify-content: center;
   margin-top: $spacing-1000; // 40px from last answer
-  
+
   .srl-load-more-btn {
     display: inline-flex;
     align-items: center;
@@ -363,11 +363,11 @@
     line-height: 1; // 16px
     cursor: pointer;
     transition: all 120ms ease;
-    
+
     &:hover {
       background: $color-bg-brand-strong-inverted; // #1f736a (darker teal)
     }
-    
+
     &:focus-visible {
       outline: 2px solid $color-focus-inner-ring;
       outline-offset: 2px;
@@ -380,7 +380,7 @@
   display: flex;
   justify-content: center;
   margin-top: $spacing-600; // 24px from load more button
-  
+
   .srl-clear-search-btn {
     display: inline-flex;
     align-items: center;
@@ -396,12 +396,12 @@
     line-height: 1; // 16px
     cursor: pointer;
     transition: all 120ms ease;
-    
+
     &:hover {
       background: $color-bg-brand-base-inverted; // #25887e
       color: $color-text-neutral-inverted; // #ffffff
     }
-    
+
     &:focus-visible {
       outline: 2px solid $color-focus-outer-ring;
       outline-offset: 2px;

@@ -1,84 +1,74 @@
-import React from 'react'
-import TitleBlock from './TitleBlock'
-import Tabs from './Tabs'
-import SummaryAnswer from './SummaryAnswer'
-import Callout from './Callout'
-import Answers from './Answers'
-import { SearchResult } from '../Home'
+import React, { useEffect, useState } from 'react';
+import Tabs from './Tabs';
+import SummaryAnswer from './SummaryAnswer';
+import Callout from './Callout';
+import Answers from './Answers';
+import { SearchResultData } from "../../types/types.ts";
+import { useNavigate } from "react-router-dom";
 
 interface SearchResultListingProps {
-  searchResults: SearchResult
-  onClearSearch: () => void
+  searchResults: SearchResultData;
+  onClearSearch: () => void;
 }
 
-const SearchResultListing: React.FC<SearchResultListingProps> = ({ 
-  searchResults, 
-  onClearSearch 
+const SearchResultListing: React.FC<SearchResultListingProps> = ({
+  searchResults,
+  onClearSearch
 }) => {
   const tabsOptions = ['Országos jogszabályok', 'Önkormányzati rendeletek']
+  const [visibleCount, setVisibleCount] = useState(3);
 
-  // Transform search results data for components
-  const answersData = searchResults.answers.map(answer => ({
-    id: answer.id,
-    title: answer.title,
-    body: (
-      <>
-        <div className="srl-answer-meta">{answer.meta}</div>
-        <p>{answer.text}</p>
-        <div className="srl-answer-actions">
-          <button className="srl-answer-action-btn srl-answer-bookmark" type="button" aria-label="Könyvjelző">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 2v12l5-3 5 3V2H3z" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-            </svg>
-          </button>
-          <button className="srl-answer-action-btn srl-answer-expand" type="button">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d={answer.expanded ? "M4 6l4 4 4-4" : "M4 10l4-4 4 4"} stroke="currentColor" strokeWidth="1.5" fill="none"/>
-            </svg>
-            <span>{answer.expanded ? answer.actions.showLess : answer.actions.showMore}</span>
-          </button>
-        </div>
-      </>
-    )
-  }))
+  useEffect(() => {
+    setVisibleCount(3);
+  }, [searchResults]);
+
+  const navigate = useNavigate();
+
+  const clearSearch = () => {
+    navigate(`/`);
+    onClearSearch();
+  }
+
+
+  const loadMore = () => {
+    setVisibleCount((prev) => prev + 3); // mindig 3-mal több
+  };
 
   return (
-    <section className="search-result-listing" data-node-id="SRL:ROOT">
-      <div className="srl-container">
-        <TitleBlock 
-          title="Keresés találatok"
-          subtitle={searchResults.resultId}
+    <div className="srl-content">
+      <Tabs options={tabsOptions} />
+      <div className="srl-results-container">
+        <SummaryAnswer
+          title={searchResults.summaryAnswer.title}
+          content={<p>{searchResults.summaryAnswer.description}</p>}
         />
-        <div className="srl-content">
-          <Tabs options={tabsOptions} />
-          <div className="srl-results-container">
-            <SummaryAnswer 
-              title={searchResults.summaryAnswer.title}
-              content={<p>{searchResults.summaryAnswer.text}</p>}
-            />
-            <Callout 
-              title={searchResults.callout.title}
-              text={searchResults.callout.text}
-            />
-            <Answers items={answersData} />
-            <div className="srl-load-more">
-              <button className="srl-load-more-btn" type="button">
-                {searchResults.loadMoreText}
-              </button>
-            </div>
-            <div className="srl-clear-search">
-              <button 
-                className="srl-clear-search-btn" 
-                type="button"
-                onClick={onClearSearch}
-              >
-                Új keresés
-              </button>
-            </div>
+        <Callout
+          title={searchResults.callout.title}
+          description={searchResults.callout.text}
+        />
+        <Answers items={searchResults.answers.slice(0, visibleCount)} />
+        {visibleCount < searchResults.answers.length && (
+          <div className="srl-load-more">
+            <button
+              className="srl-load-more-btn"
+              type="button"
+              onClick={loadMore}
+            >
+              További találatok
+            </button>
           </div>
+        )}
+        <div className="srl-clear-search">
+          <button
+            className="srl-clear-search-btn"
+            type="button"
+            onClick={clearSearch}
+          >
+            Új keresés
+          </button>
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 
