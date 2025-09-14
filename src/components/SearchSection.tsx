@@ -134,11 +134,11 @@ const SearchSection: React.FC<SearchSectionProps> = ({
                       </button>
                       <button 
                         className="search-suggestion-item" 
-                        onClick={() => handleSuggestionClick('Ki jogosult az otthon start programra')}
+                        onClick={() => handleSuggestionClick('Otthon start program')}
                         tabIndex={0}
                       >
                         <i className="ri-search-line search-suggestion-icon"></i>
-                        <span className="search-suggestion-text">Ki jogosult az otthon start programra</span>
+                        <span className="search-suggestion-text">Otthon start program</span>
                       </button>
                     </div>
                   </div>
