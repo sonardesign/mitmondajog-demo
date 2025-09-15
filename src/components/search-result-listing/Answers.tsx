@@ -12,8 +12,14 @@ const Answers: React.FC<AnswersProps> = ({
     <section className="srl-answers">
       <div className="srl-answers-list">
         {items.map((item, index) => (
-          <AnswerItem title={item.title} shortDescription={item.shortDescription}
-                      description={item.description} meta={item.meta} key={index}></AnswerItem>
+          <div key={index} className="search-result-item">
+            <AnswerItem 
+              title={item.title} 
+              shortDescription={item.shortDescription}
+              description={item.description} 
+              meta={item.meta}
+            />
+          </div>
         ))}
       </div>
     </section>

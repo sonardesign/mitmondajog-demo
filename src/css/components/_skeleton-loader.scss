@@ -1,0 +1,218 @@
+@use '../../styles/variables.scss' as *;
+
+// Skeleton loader animations and styles
+.skeleton-loader {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+// Base skeleton element with shimmer animation
+.skeleton-line,
+.skeleton-tab,
+.skeleton-summary-title,
+.skeleton-summary-button,
+.skeleton-callout-icon,
+.skeleton-answer-title,
+.skeleton-answer-meta {
+  background: linear-gradient(90deg, 
+    #f0f0f0 25%, 
+    #e0e0e0 50%, 
+    #f0f0f0 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: $radius-small; // 4px
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+// Skeleton Tabs
+.skeleton-tabs {
+  display: flex;
+  gap: $spacing-400; // 16px
+  margin-bottom: $spacing-800; // 32px
+  padding: 0 $spacing-800; // 32px horizontal
+}
+
+.skeleton-tab {
+  height: 40px;
+  width: 180px;
+  border-radius: $radius-rounded; // pill shape
+  
+  &--active {
+    background: linear-gradient(90deg, 
+      #25887e40 25%, 
+      #25887e60 50%, 
+      #25887e40 75%
+    );
+    background-size: 200% 100%;
+  }
+}
+
+// Skeleton Summary Answer
+.skeleton-summary {
+  background: $color-bg-brand-base-inverted; // #25887e
+  border-radius: $radius-base; // 8px
+  padding: $spacing-800; // 32px
+  margin-bottom: $spacing-600; // 24px
+  
+  .skeleton-summary-title {
+    height: 22px;
+    width: 150px;
+    margin-bottom: $spacing-600; // 24px
+    background: linear-gradient(90deg, 
+      rgba(255, 255, 255, 0.1) 25%, 
+      rgba(255, 255, 255, 0.2) 50%, 
+      rgba(255, 255, 255, 0.1) 75%
+    );
+    background-size: 200% 100%;
+  }
+  
+  .skeleton-summary-content {
+    margin-bottom: $spacing-800; // 32px
+    
+    .skeleton-line {
+      height: 16px;
+      margin-bottom: $spacing-300; // 12px
+      background: linear-gradient(90deg, 
+        rgba(255, 255, 255, 0.1) 25%, 
+        rgba(255, 255, 255, 0.2) 50%, 
+        rgba(255, 255, 255, 0.1) 75%
+      );
+      background-size: 200% 100%;
+      
+      &--long {
+        width: 90%;
+      }
+      
+      &--medium {
+        width: 70%;
+      }
+      
+      &--short {
+        width: 50%;
+      }
+    }
+  }
+  
+  .skeleton-summary-button {
+    height: 40px;
+    width: 180px;
+    border-radius: $radius-rounded; // pill shape
+    margin-left: auto;
+    background: linear-gradient(90deg, 
+      rgba(255, 255, 255, 0.1) 25%, 
+      rgba(255, 255, 255, 0.2) 50%, 
+      rgba(255, 255, 255, 0.1) 75%
+    );
+    background-size: 200% 100%;
+  }
+}
+
+// Skeleton Callout
+.skeleton-callout {
+  display: flex;
+  gap: $spacing-400; // 16px
+  background: $color-bg-brand-medium; // #ddeceb
+  border-radius: $radius-base; // 8px
+  padding: $spacing-600; // 24px
+  margin-bottom: $spacing-600; // 24px
+  
+  .skeleton-callout-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  
+  .skeleton-callout-content {
+    flex: 1;
+    
+    .skeleton-line {
+      height: 14px;
+      margin-bottom: $spacing-200; // 8px
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// Skeleton Answers
+.skeleton-answers {
+  .skeleton-answer {
+    background: $color-bg-neutral-subtle; // #ffffff
+    border: 1px solid $color-bg-neutral-strong; // #e9edf2
+    border-radius: $radius-base; // 8px
+    padding: $spacing-600; // 24px
+    margin-bottom: $spacing-600; // 24px
+    
+    .skeleton-answer-title {
+      height: 20px;
+      width: 80%;
+      margin-bottom: $spacing-300; // 12px
+    }
+    
+    .skeleton-answer-meta {
+      height: 12px;
+      width: 120px;
+      margin-bottom: $spacing-400; // 16px
+      opacity: 0.6;
+    }
+    
+    .skeleton-answer-content {
+      .skeleton-line {
+        height: 14px;
+        margin-bottom: $spacing-300; // 12px
+        
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+// Fade-in animation for actual content
+.search-results-fade-in {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// Staggered animation for individual result items
+.search-result-item {
+  animation: fadeInUp 0.4s ease-out;
+  animation-fill-mode: both;
+  
+  &:nth-child(1) { animation-delay: 0.1s; }
+  &:nth-child(2) { animation-delay: 0.2s; }
+  &:nth-child(3) { animation-delay: 0.3s; }
+  &:nth-child(4) { animation-delay: 0.4s; }
+  &:nth-child(5) { animation-delay: 0.5s; }
+}

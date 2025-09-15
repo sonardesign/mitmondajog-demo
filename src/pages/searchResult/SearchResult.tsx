@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import SearchSection from "../../components/SearchSection.tsx";
 import SearchResultListing from "../../components/search-result-listing/SearchResultListing.tsx";
+import SkeletonLoader from "../../components/SkeletonLoader.tsx";
 import { searchForResults } from '../../services/searchService';
 import { useLocation, useNavigate } from "react-router-dom";
 import TitleBlock from "../../components/search-result-listing/TitleBlock.tsx";
@@ -71,11 +72,14 @@ const SearchResult = () => {
             subtitle={searchResults?.resultId}
             isLoading={isLoading}
           />
-          {searchResults && (
-            <SearchResultListing
-              searchResults={searchResults}
-              onClearSearch={handleClearSearch}
-            />
+          {isLoading && <SkeletonLoader />}
+          {searchResults && !isLoading && (
+            <div className="search-results-fade-in">
+              <SearchResultListing
+                searchResults={searchResults}
+                onClearSearch={handleClearSearch}
+              />
+            </div>
           )}
         </div>
       </section>
