@@ -1,0 +1,27 @@
+{
+  "searchTerm": "Adatvédelem",
+  "resultId": "1a23bc45-678d-4ef0-9c11-22334455abcd",
+  "summaryAnswer": {
+    "title": "Összegzett válasz",
+    "shortDescription": "Az adatvédelem az egyének személyes adatainak kezelésével kapcsolatos jogi és technikai intézkedések összessége, amelyek célja a visszaélések megelőzése, az adatok bizalmasságának, sértetlenségének és rendelkezésre állásának biztosítása.",
+    "description": "Az adatvédelem az egyének személyes adatainak kezelésével kapcsolatos jogi és technikai intézkedések összessége, amelyek célja a visszaélések megelőzése, az adatok bizalmasságának, sértetlenségének és rendelkezésre állásának biztosítása. Az Európai Unióban ezt elsősorban a GDPR szabályozza."
+  },
+  "callout": {
+    "title": "Figyelem",
+    "text": "A személyes adatok kezelése csak jogszerű alapon történhet, az érintett hozzájárulása vagy jogszabályi kötelezettség alapján."
+  },
+  "answers": [
+    {
+      "title": "2016/679/EU rendelet (GDPR)",
+      "meta": "2018. 05. 25. - Jelenleg hatályos",
+      "shortDescription": "A rendelet célja, hogy magas szintű védelmet biztosítson az EU polgárainak személyes adatai számára, és egységes szabályokat hozzon létre az adatok szabad áramlásának biztosítása mellett.",
+      "description": "A rendelet célja, hogy magas szintű védelmet biztosítson az EU polgárainak személyes adatai számára, és egységes szabályokat hozzon létre az adatok szabad áramlásának biztosítása mellett."
+    },
+    {
+      "title": "2011. évi CXII. törvény (Infotv.)",
+      "meta": "2012. 01. 01. - Jelenleg hatályos",
+      "shortDescription": "Az Infotv. rendelkezik többek között a Nemzeti Adatvédelmi és Információszabadság Hatóság (NAIH) feladatairól és hatásköréről is.",
+      "description": "Az Infotv. rendelkezik többek között a Nemzeti Adatvédelmi és Információszabadság Hatóság (NAIH) feladatairól és hatásköréről is."
+    }
+  ]
+}

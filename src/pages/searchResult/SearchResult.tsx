@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import SearchSection from "../../components/SearchSection.tsx";
 import SearchResultListing from "../../components/search-result-listing/SearchResultListing.tsx";
-import searchData from '../../data/searchData.json';
+import { searchForResults } from '../../services/searchService';
 import { useLocation, useNavigate } from "react-router-dom";
 import TitleBlock from "../../components/search-result-listing/TitleBlock.tsx";
 import { SearchResultData } from "../../types/types.ts";
@@ -20,23 +20,24 @@ const SearchResult = () => {
     handleSearch(searchQuery);
   }, []);
 
-  const handleSearch = (query: string) => {
+  const handleSearch = async (query: string) => {
     const normalizedQuery = query.toLowerCase().trim();
     navigate(`/search-result?query=${encodeURIComponent(normalizedQuery)}`);
 
-    // Check if query matches any search term in our data
-    // const results = searchData.searchResults[normalizedQuery as keyof typeof searchData.searchResults]
-    const results = searchData.searchResults.find(
-      (value) => value.searchTerm.toLowerCase().includes(normalizedQuery)
-    );
-    console.log(results);
-    if (results) {
-      setSearchResults(results)
-      setSearchQuery(query)
-    } else {
-      // Handle no results case - you could show a "No results found" message
-      console.log(`No results found for: "${query}"`)
-      setSearchResults(null)
+    try {
+      const results = await searchForResults(normalizedQuery);
+      console.log(results);
+      if (results) {
+        setSearchResults(results);
+        setSearchQuery(query);
+      } else {
+        // Handle no results case - you could show a "No results found" message
+        console.log(`No results found for: "${query}"`);
+        setSearchResults(null);
+      }
+    } catch (error) {
+      console.error('Error searching for results:', error);
+      setSearchResults(null);
     }
   }
 

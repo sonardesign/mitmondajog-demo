@@ -3,6 +3,7 @@ import './App.scss'
 import Home from "./pages/home/Home.tsx";
 import Header from "./components/Header.tsx";
 import SearchResult from "./pages/searchResult/SearchResult.tsx";
+import Footer from "./components/Footer.tsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/search-result" element={<SearchResult />} />
         </Routes>
       </main>
+      <Footer />
     </div>
   )
 }

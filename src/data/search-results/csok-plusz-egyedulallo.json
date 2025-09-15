@@ -1,0 +1,21 @@
+{
+  "searchTerm": "Igénybe vehetem a CSOK pluszt egyedülállóként?",
+  "resultId": "1e92a8d0-2a41-4eaf-8d55-7c9f0138a001",
+  "summaryAnswer": {
+    "title": "Összegzett válasz",
+    "shortDescription": "A 2024-ben bevezetett CSOK Plusz egy olyan állami támogatás, amely kifejezetten házaspárok lakáscélú hitelfelvételéhez nyújt segítséget.",
+    "description": "A 2024-ben bevezetett CSOK Plusz egy olyan állami támogatás, amely kifejezetten házaspárok lakáscélú hitelfelvételéhez nyújt segítséget. A program feltétele, hogy a pár házastársi kapcsolatban álljon, és vállaljon gyermek(eke)t, vagy már meglévő gyermek(ek) nevelését igazolja. Egyedülállók számára a konstrukció sajnos nem elérhető, így számukra más lakhatási támogatások jöhetnek szóba, például piaci alapú hitelek vagy önkormányzati támogatási formák."
+  },
+  "callout": {
+    "title": "Fontos információ",
+    "text": "A CSOK Plusz kizárólag házaspárok számára elérhető támogatási forma."
+  },
+  "answers": [
+    {
+      "title": "Kormányrendelet a CSOK Pluszról",
+      "meta": "2024. 01. 01. - Hatályos",
+      "shortDescription": "A CSOK Plusz jogszabályi kereteit a kormányrendelet határozza meg, amely kimondja, hogy a támogatás kizárólag házastársi kapcsolatban élők számára biztosított.",
+      "description": "A CSOK Plusz jogszabályi kereteit a kormányrendelet határozza meg, amely kimondja, hogy a támogatás kizárólag házastársi kapcsolatban élők számára biztosított. Egyedülálló személyek nem jogosultak az igénybevételre."
+    }
+  ]
+}

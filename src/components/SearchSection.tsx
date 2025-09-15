@@ -68,6 +68,11 @@ const SearchSection: React.FC<SearchSectionProps> = ({
     }, 150)
   }
 
+  const handleClearInput = () => {
+    setInputValue('')
+    onQueryChange('')
+  }
+
   return (
     <section className="search-section" data-node-id="1369:17555">
       <div className="search-container" data-node-id="1369:17615">
@@ -105,6 +110,16 @@ const SearchSection: React.FC<SearchSectionProps> = ({
               onFocus={handleInputFocus}
               onBlur={handleInputBlur}
             />
+            {inputValue.length > 0 && (
+              <button 
+                type="button" 
+                className="search-input__clear-button" 
+                aria-label="Keresés törlése"
+                onClick={handleClearInput}
+              >
+                <i className="ri-close-line"></i>
+              </button>
+            )}
             <button 
               type="button" 
               className="search-input__button" 

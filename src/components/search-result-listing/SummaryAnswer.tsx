@@ -18,11 +18,29 @@ const SummaryAnswer: React.FC<SummaryAnswerProps> = ({
     <section className="srl-summary-answer" data-node-id={nodeId} aria-labelledby="srl-summary-title">
       <h3 id="srl-summary-title" className="srl-summary-title">{title}</h3>
       <div className="srl-summary-content">
-        <p>{showFullDescription ? description : shortDescription}</p>
+        {showFullDescription ? (
+          <div dangerouslySetInnerHTML={{ __html: description || '' }} />
+        ) : (
+          <p>{shortDescription}</p>
+        )}
       </div>
       <div className="srl-summary-cta-wrapper">
-        <button className="srl-summary-cta" type="button" onClick={() => setShowFullDescription(true)}>
-          <span>Kérem a bővebb választ</span>
+        <button 
+          className="srl-summary-cta" 
+          type="button" 
+          onClick={() => setShowFullDescription(!showFullDescription)}
+        >
+          <span>{showFullDescription ? 'Vissza a tömörebb válaszhoz' : 'Kérem a bővebb választ'}</span>
+          <svg 
+            width="16" 
+            height="16" 
+            viewBox="0 0 16 16" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
+            style={{ transform: showFullDescription ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.2s ease' }}
+          >
+            <path d="M4 6l4 4 4-4" stroke="currentColor" strokeWidth="1.5" fill="none" />
+          </svg>
         </button>
       </div>
     </section>

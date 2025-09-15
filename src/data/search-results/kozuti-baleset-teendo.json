@@ -1,0 +1,21 @@
+{
+  "searchTerm": "Közúti baleset esetén mi a teendő?",
+  "resultId": "9c1c74e5-6a33-4a8f-b16f-5ad61dca9002",
+  "summaryAnswer": {
+    "title": "Összegzett válasz",
+    "shortDescription": "Amennyiben közúti baleset történik, először a saját és az érintettek biztonságáról kell gondoskodni.",
+    "description": "Amennyiben közúti baleset történik, először a saját és az érintettek biztonságáról kell gondoskodni. Ez magában foglalja a jármű leállítását, az elakadásjelző háromszög kihelyezését, és a vészvillogó használatát. Sérülés esetén azonnal hívni kell a 112-es segélyhívó számot, és szükség esetén elsősegélyt kell nyújtani. Anyagi káros balesetnél, ha nincs személyi sérülés, a felek közös megegyezéssel tölthetnek ki kárbejelentőt. Rendőri intézkedés szükséges, ha személyi sérülés történt, vagy a felek nem tudnak megegyezni a felelősségről."
+  },
+  "callout": {
+    "title": "Fontos információ",
+    "text": "Súlyos baleset esetén mindig hívni kell a segélyhívót (112), és rendőri intézkedésre is szükség van."
+  },
+  "answers": [
+    {
+      "title": "KRESZ előírások baleset esetén",
+      "meta": "2025. 01. 01. - Hatályos",
+      "shortDescription": "A KRESZ előírja, hogy baleset esetén a járművezető köteles a járművét azonnal megállítani, a baleset helyszínét biztosítani (elakadásjelző háromszög, vészvillogó), valamint a sérültek részére segítséget nyújtani.",
+      "description": "A KRESZ előírja, hogy baleset esetén a járművezető köteles a járművét azonnal megállítani, a baleset helyszínét biztosítani (elakadásjelző háromszög, vészvillogó), valamint a sérültek részére segítséget nyújtani. Ha személyi sérülés történik, a segélyhívó értesítése kötelező."
+    }
+  ]
+}

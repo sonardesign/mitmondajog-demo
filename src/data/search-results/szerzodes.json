@@ -1,0 +1,21 @@
+{
+  "searchTerm": "Szerződés",
+  "resultId": "9f87a6c5-2e4d-4a89-b1d1-11223344eeff",
+  "summaryAnswer": {
+    "title": "Összegzett válasz",
+    "shortDescription": "A szerződés az egyik legfontosabb jogi eszköz a polgári jogban. Írásban vagy szóban is létrejöhet, de bizonyos típusaihoz (pl. ingatlan adásvétel) kötelező az írásbeliség.",
+    "description": "A szerződés az egyik legfontosabb jogi eszköz a polgári jogban. Írásban vagy szóban is létrejöhet, de bizonyos típusaihoz (pl. ingatlan adásvétel) kötelező az írásbeliség. A szerződések szabályait a Polgári Törvénykönyv tartalmazza."
+  },
+  "callout": {
+    "title": "Fontos",
+    "text": "A szerződés érvényességéhez szükséges a felek kölcsönös és egybehangzó akaratnyilatkozata."
+  },
+  "answers": [
+    {
+      "title": "2013. évi V. törvény (Polgári Törvénykönyv)",
+      "meta": "2014. 03. 15. - Jelenleg hatályos",
+      "shortDescription": "A szerződés akkor jön létre, ha a felek akaratnyilatkozata találkozik.",
+      "description": "A szerződés akkor jön létre, ha a felek akaratnyilatkozata találkozik. A Ptk. részletesen szabályozza a szerződések érvénytelenségének eseteit, valamint a jogkövetkezményeket."
+    }
+  ]
+}

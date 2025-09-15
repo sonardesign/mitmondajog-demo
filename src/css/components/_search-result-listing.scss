@@ -121,6 +121,7 @@
 
   .srl-summary-content {
     margin-bottom: $spacing-800; // 32px to button
+    color: $color-text-neutral-inverted; // #ffffff - make all text white
 
     p {
       margin: 0;
@@ -128,8 +129,40 @@
       font-size: $body-md-size; // 16px
       font-weight: $body-md-weight; // 500
       line-height: $body-md-line-height; // 1.5 (24px)
-      color: $color-text-neutral-inverted; // #ffffff
+      color: inherit; // inherit white color from parent
       letter-spacing: 0;
+    }
+
+    // Make all HTML elements white
+    h1, h2, h3, h4, h5, h6,
+    ol, ul, li,
+    strong, b, em, i,
+    div, span {
+      color: $color-text-neutral-inverted; // #ffffff
+    }
+
+    // Style ordered lists properly
+    ol {
+      margin: 16px 0;
+      padding-left: 24px;
+      
+      li {
+        margin: 8px 0;
+        font-family: $body-md-family; // Inter
+        font-size: $body-md-size; // 16px
+        font-weight: $body-md-weight; // 500
+        line-height: $body-md-line-height; // 1.5 (24px)
+        color: $color-text-neutral-inverted; // #ffffff
+      }
+    }
+
+    // Style headings properly
+    h2 {
+      font-size: $heading-5-size; // 18px
+      font-weight: $heading-5-weight; // 700
+      line-height: $heading-5-line-height; // 1.25
+      color: $color-text-neutral-inverted; // #ffffff
+      margin: 16px 0 8px 0;
     }
   }
 
@@ -162,6 +195,12 @@
     &:focus-visible {
       outline: 2px solid $color-focus-inner-ring;
       outline-offset: 2px;
+    }
+
+    // Style the chevron icon
+    svg {
+      flex-shrink: 0; // prevent icon from shrinking
+      color: inherit; // inherit the button's color
     }
   }
 }
