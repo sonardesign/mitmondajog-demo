@@ -141,11 +141,11 @@ const SearchSection: React.FC<SearchSectionProps> = ({
                     <div className="search-suggestions-list">
                       <button 
                         className="search-suggestion-item" 
-                        onClick={() => handleSuggestionClick('közérdekű adat')}
+                        onClick={() => handleSuggestionClick('Közérdekű adat')}
                         tabIndex={0}
                       >
                         <i className="ri-search-line search-suggestion-icon"></i>
-                        <span className="search-suggestion-text">közérdekű adat</span>
+                        <span className="search-suggestion-text">Közérdekű adat</span>
                       </button>
                       <button 
                         className="search-suggestion-item" 

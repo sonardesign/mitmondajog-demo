@@ -1,216 +1,114 @@
 @use '../../styles/variables.scss' as *;
 
-// Footer pixel-perfect implementation from Figma node 1457:15308
+// Footer based on the provided design image
 .footer {
-  background: $color-bg-brand-base-inverted; // #25887e
-  color: $color-text-neutral-inverted; // #ffffff
-  padding: $spacing-1600 0 0 0; // 64px top, 0 sides and bottom
+  background: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+  padding: 0 0 $spacing-800 0; // 32px bottom padding only
   margin-top: auto; // Push footer to bottom
+
+  // Tricolor section at the top
+  .tricolor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .tricolor-line {
+      width: 100%;
+      height: 4px;
+
+      &--red {
+        background-color: #CD2A3E;
+      }
+
+      &--white {
+        background-color: #FFFFFF;
+      }
+
+      &--green {
+        background-color: #2D5E38;
+      }
+    }
+  }
 
   .footer-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 $spacing-600; // 24px horizontal padding
+    padding: $spacing-800 $spacing-600 0 $spacing-600; // 32px top, 24px horizontal, 0 bottom
   }
 
   .footer-content {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr; // Logo section, nav columns, contact
-    gap: $spacing-1200; // 48px gap between sections
-    padding-bottom: $spacing-1600; // 64px bottom padding
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: $spacing-600; // 24px margin bottom
 
-    @media (max-width: 1024px) {
-      grid-template-columns: 1fr;
-      gap: $spacing-1000; // 40px gap on smaller screens
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: $spacing-600; // 24px gap on mobile
+      align-items: flex-start;
     }
   }
 
   // Logo Section
-  .footer-logo-section {
-    display: flex;
-    flex-direction: column;
-    gap: $spacing-600; // 24px gap
+  .footer-logo {
+    flex-shrink: 0;
 
-    .footer-logo {
-      .footer-logo__image {
-        height: 40px;
-        width: auto;
-      }
-    }
-
-    .footer-description {
-      font-family: $body-md-family; // Inter
-      font-size: $body-md-size; // 16px
-      font-weight: $body-md-weight; // 500
-      line-height: $body-md-line-height; // 1.5
-      color: rgba(255, 255, 255, 0.8);
-      margin: 0;
-      max-width: 280px;
+    .footer-logo__image {
+      height: 48px;
+      width: auto;
     }
   }
 
   // Navigation Section
   .footer-nav {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: $spacing-800; // 32px gap between columns
+    display: flex;
+    gap: $spacing-800; // 32px gap between links
+    align-items: center;
 
     @media (max-width: 768px) {
-      grid-template-columns: 1fr;
-      gap: $spacing-600; // 24px gap on mobile
+      flex-wrap: wrap;
+      gap: $spacing-400; // 16px gap on mobile
     }
 
-    .footer-nav-column {
-      display: flex;
-      flex-direction: column;
-      gap: $spacing-500; // 20px gap
+    .footer-nav-link {
+      font-family: $body-sm-family; // Inter
+      font-size: $body-sm-size; // 14px
+      font-weight: $body-sm-weight; // 500
+      line-height: $body-sm-line-height; // 1.5
+      color: #6c757d;
+      text-decoration: underline;
+      transition: color 0.2s ease;
+      white-space: nowrap;
 
-      .footer-nav-title {
-        font-family: $heading-5-family; // Inter
-        font-size: $heading-5-size; // 18px
-        font-weight: $heading-5-weight; // 700
-        line-height: $heading-5-line-height; // 1.25
-        color: $color-text-neutral-inverted; // #ffffff
-        margin: 0;
+      &:hover {
+        color: #495057;
       }
 
-      .footer-nav-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        gap: $spacing-300; // 12px gap between items
-
-        .footer-nav-item {
-          .footer-nav-link {
-            font-family: $body-sm-family; // Inter
-            font-size: $body-sm-size; // 14px
-            font-weight: $body-sm-weight; // 500
-            line-height: $body-sm-line-height; // 1.5
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-            transition: color 0.2s ease;
-
-            &:hover {
-              color: $color-text-neutral-inverted; // #ffffff
-              text-decoration: underline;
-            }
-
-            &:focus {
-              outline: 2px solid $color-focus-outer-ring; // #25887e
-              outline-offset: 2px;
-              border-radius: $radius-small; // 4px
-            }
-          }
-        }
+      &:focus {
+        outline: 2px solid $color-focus-outer-ring;
+        outline-offset: 2px;
+        border-radius: $radius-small; // 4px
       }
     }
   }
 
-  // Contact Section
-  .footer-contact {
-    display: flex;
-    flex-direction: column;
-    gap: $spacing-500; // 20px gap
+  // Copyright Section
+  .footer-copyright {
+    border-top: 1px solid #e9ecef;
+    padding-top: $spacing-400; // 16px top padding
 
-    .footer-contact-title {
-      font-family: $heading-5-family; // Inter
-      font-size: $heading-5-size; // 18px
-      font-weight: $heading-5-weight; // 700
-      line-height: $heading-5-line-height; // 1.25
-      color: $color-text-neutral-inverted; // #ffffff
+    .footer-copyright-text {
+      font-family: $body-sm-family; // Inter
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #6c757d;
       margin: 0;
-    }
-
-    .footer-contact-info {
-      display: flex;
-      flex-direction: column;
-      gap: $spacing-300; // 12px gap between items
-
-      .footer-contact-item {
-        display: flex;
-        align-items: center;
-        gap: $spacing-300; // 12px gap between icon and text
-
-        .footer-contact-icon {
-          font-size: 16px;
-          color: rgba(255, 255, 255, 0.8);
-          flex-shrink: 0;
-        }
-
-        .footer-contact-text {
-          font-family: $body-sm-family; // Inter
-          font-size: $body-sm-size; // 14px
-          font-weight: $body-sm-weight; // 500
-          line-height: $body-sm-line-height; // 1.5
-          color: rgba(255, 255, 255, 0.8);
-        }
-      }
-    }
-  }
-
-  // Bottom Bar
-  .footer-bottom {
-    padding: $spacing-600 0; // 24px vertical padding
-
-    .footer-bottom-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      text-align: left;
 
       @media (max-width: 768px) {
-        flex-direction: column;
-        gap: $spacing-400; // 16px gap on mobile
-      }
-
-      .footer-copyright {
-        .footer-copyright-text {
-          font-family: $body-sm-family; // Inter
-          font-size: $body-sm-size; // 14px
-          font-weight: $body-sm-weight; // 500
-          line-height: $body-sm-line-height; // 1.5
-          color: rgba(255, 255, 255, 0.6);
-          margin: 0;
-        }
-      }
-
-      .footer-social {
-        display: flex;
-        gap: $spacing-400; // 16px gap between social icons
-
-        .footer-social-link {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 36px;
-          height: 36px;
-          background: rgba(255, 255, 255, 0.1);
-          border-radius: $radius-rounded; // 1000px (circle)
-          color: rgba(255, 255, 255, 0.8);
-          text-decoration: none;
-          transition: all 0.2s ease;
-
-          i {
-            font-size: 16px;
-          }
-
-          &:hover {
-            background: rgba(255, 255, 255, 0.2);
-            color: $color-text-neutral-inverted; // #ffffff
-            transform: translateY(-2px);
-          }
-
-          &:focus {
-            outline: 2px solid $color-focus-outer-ring; // #25887e
-            outline-offset: 2px;
-          }
-
-          &:active {
-            transform: translateY(0);
-          }
-        }
+        font-size: 11px;
       }
     }
   }
@@ -219,27 +117,15 @@
 // Responsive adjustments
 @media (max-width: 640px) {
   .footer {
-    padding: $spacing-1000 0 0 0; // 40px top on mobile
+    padding: $spacing-600 0; // 24px vertical padding on mobile
 
     .footer-container {
       padding: 0 $spacing-400; // 16px horizontal padding on mobile
     }
 
-    .footer-content {
-      padding-bottom: $spacing-1000; // 40px bottom padding on mobile
-    }
-
     .footer-nav {
-      .footer-nav-column {
-        .footer-nav-title {
-          font-size: $body-md-size; // 16px on mobile
-        }
-      }
-    }
-
-    .footer-contact {
-      .footer-contact-title {
-        font-size: $body-md-size; // 16px on mobile
+      .footer-nav-link {
+        font-size: 13px;
       }
     }
   }
