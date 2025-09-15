@@ -15,9 +15,10 @@ const TitleBlock: React.FC<TitleBlockProps> = ({
 }) => {
   return (
     <header className="srl-title-block" data-node-id={nodeId}>
-      <h1 className="srl-title">{title}</h1>
-      {isLoading && (
+      {isLoading ? (
         <LoadingSpinner size="medium" className="srl-title-loading" />
+      ) : (
+        <h1 className="srl-title">{title}</h1>
       )}
     </header>
   )
