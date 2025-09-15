@@ -1,4 +1,5 @@
 import React from 'react'
+import footerLogo from '../assets/footer-logo.svg'
 
 const Footer: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ const Footer: React.FC = () => {
           {/* Logo Section */}
           <div className="footer-logo">
             <img 
-              src="/src/assets/footer-logo.svg" 
+              src={footerLogo} 
               alt="Jogszabálykeresó" 
               className="footer-logo__image"
             />

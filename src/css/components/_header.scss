@@ -61,7 +61,7 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        background: $color-button-primary-bg-inverted-enabled; // #f4f9f8
+        color: white;
         border: none;
         padding: 0;
         transition: background-color 120ms ease, opacity 120ms ease, border-color 120ms ease;
@@ -73,7 +73,12 @@
 
         img { width: 20px; height: 20px; display: block; }
 
-        &:hover { opacity: 0.92; }
+        &:hover {
+           opacity: 0.92; 
+           background: white;
+           color: $color-bg-brand-base-inverted
+          }
+
         &:focus-visible { outline: none; box-shadow: 0 0 0 2px rgba(255,255,255,0.24); }
       }
     }
