@@ -1,0 +1,85 @@
+@use '../../styles/variables.scss' as *;
+
+.loading-spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $spacing-400; // 16px gap
+  padding: $spacing-600 0; // 24px vertical padding
+
+  &--small {
+    .loading-spinner__circle {
+      width: 20px;
+      height: 20px;
+      border-width: 2px;
+    }
+    
+    .loading-spinner__text {
+      font-size: $font-size-sm; // 14px
+    }
+  }
+
+  &--medium {
+    .loading-spinner__circle {
+      width: 32px;
+      height: 32px;
+      border-width: 3px;
+    }
+    
+    .loading-spinner__text {
+      font-size: $font-size-base; // 16px
+    }
+  }
+
+  &--large {
+    .loading-spinner__circle {
+      width: 48px;
+      height: 48px;
+      border-width: 4px;
+    }
+    
+    .loading-spinner__text {
+      font-size: $font-size-lg; // 18px
+    }
+  }
+
+  .loading-spinner__circle {
+    border: 3px solid rgba(37, 136, 126, 0.1); // Light teal background
+    border-top: 3px solid $color-bg-brand-base-inverted; // #25887e
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+
+  .loading-spinner__text {
+    font-family: $font-family-primary;
+    font-weight: $font-weight-medium;
+    color: $color-text-neutral-base; // #404753
+    text-align: center;
+    margin: 0;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// Animation for fade in
+.loading-spinner {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

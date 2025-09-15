@@ -15,6 +15,7 @@ const SearchResult = () => {
 
   const [searchQuery, setSearchQuery] = useState<string>(query ?? '')
   const [searchResults, setSearchResults] = useState<SearchResultData | null>(null)
+  const [isLoading, setIsLoading] = useState<boolean>(false)
 
   useEffect(() => {
     handleSearch(searchQuery);
@@ -24,7 +25,15 @@ const SearchResult = () => {
     const normalizedQuery = query.toLowerCase().trim();
     navigate(`/search-result?query=${encodeURIComponent(normalizedQuery)}`);
 
+    // Start loading
+    setIsLoading(true);
+    setSearchResults(null);
+
     try {
+      // Simulate realistic backend loading time (2-4 seconds)
+      const loadingTime = Math.random() * 2000 + 2000; // 2-4 seconds
+      await new Promise(resolve => setTimeout(resolve, loadingTime));
+      
       const results = await searchForResults(normalizedQuery);
       console.log(results);
       if (results) {
@@ -38,6 +47,8 @@ const SearchResult = () => {
     } catch (error) {
       console.error('Error searching for results:', error);
       setSearchResults(null);
+    } finally {
+      setIsLoading(false);
     }
   }
 
@@ -58,6 +69,7 @@ const SearchResult = () => {
           <TitleBlock
             title="Keresés találatok"
             subtitle={searchResults?.resultId}
+            isLoading={isLoading}
           />
           {searchResults && (
             <SearchResultListing

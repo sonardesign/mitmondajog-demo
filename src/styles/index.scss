@@ -10,6 +10,7 @@
 @use '../css/components/button';
 @use '../css/components/search-result-listing';
 @use '../css/components/footer';
+@use '../css/components/loading-spinner';
 
 :root {
   font-family: $font-family-primary;
