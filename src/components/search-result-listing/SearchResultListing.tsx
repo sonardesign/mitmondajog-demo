@@ -43,10 +43,7 @@ const SearchResultListing: React.FC<SearchResultListingProps> = ({
           shortDescription={searchResults.summaryAnswer.shortDescription}
           description={searchResults.summaryAnswer.description}
         />
-        <Callout
-          title={searchResults.callout.title}
-          description={searchResults.callout.text}
-        />
+        <Callout title="Fontos információ" />
         <Answers items={searchResults.answers.slice(0, visibleCount)} />
         {visibleCount < searchResults.answers.length && (
           <div className="srl-load-more">

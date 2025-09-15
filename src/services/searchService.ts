@@ -9,7 +9,9 @@ const SEARCH_TERM_TO_FILE_MAP: Record<string, string> = {
   'igénybe vehetem a csok pluszt egyedülállóként?': 'csok-plusz-egyedulallo',
   'közúti baleset esetén mi a teendő?': 'kozuti-baleset-teendo',
   'otthon start program': 'otthon-start-program',
-  'cégalapítás lépései': 'cegalapitas-lepései'
+  'cégalapítás lépései': 'cegalapitas-lepései',
+  'csendrendelet szabályai': 'csendrendelet-szabalyai',
+  'csendrendelet': 'csendrendelet-szabalyai'
 };
 
 export const searchForResults = async (query: string): Promise<SearchResultData | null> => {

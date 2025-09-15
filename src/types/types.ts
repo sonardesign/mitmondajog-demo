@@ -6,10 +6,6 @@ export interface SearchResultData {
     shortDescription: string
     description: string
   }
-  callout: {
-    title: string
-    text: string
-  }
   answers: Array<{
     title: string;
     meta: string;
