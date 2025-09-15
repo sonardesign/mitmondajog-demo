@@ -1,4 +1,5 @@
 @use '../../styles/variables.scss' as *;
+@use '../animations/spinner-animations';
 
 // Search Result Listing - Pixel Perfect Figma Implementation
 // Based on: https://www.figma.com/design/lycJGhJm5QBU1UpViPx9J8/NJT---DÁP-brand-merge?node-id=1399-14622
@@ -195,6 +196,29 @@
     &:focus-visible {
       outline: 2px solid $color-focus-inner-ring;
       outline-offset: 2px;
+    }
+
+    &--loading {
+      pointer-events: none;
+      opacity: 0.8;
+    }
+
+    .srl-summary-cta__spinner {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 16px;
+      height: 16px;
+
+      .spinner {
+        animation: spin 1s linear infinite;
+      }
+
+      .spinner-circle {
+        stroke-dasharray: 37.7; // 2πr where r=6
+        stroke-dashoffset: 37.7;
+        animation: dash 1.5s ease-in-out infinite;
+      }
     }
 
     // Style the chevron icon

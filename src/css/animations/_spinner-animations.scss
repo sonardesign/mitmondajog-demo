@@ -1,0 +1,22 @@
+// Keyframe animations for spinner components
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 37.7;
+  }
+  50% {
+    stroke-dashoffset: 9.425; // 37.7 / 4
+  }
+  100% {
+    stroke-dashoffset: 37.7;
+  }
+}
